@@ -7,8 +7,6 @@ public class FloatVariable : Variable
 {
     [SerializeField] private float value;
 
-    [System.NonSerialized] private float lastValue;
-
     public float Value
     {
         get { return value; }

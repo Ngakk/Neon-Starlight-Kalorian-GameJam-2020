@@ -12,7 +12,7 @@ public class VariableCustomInspector : Editor
 
         Variable s = (Variable)target;
 
-        if(GUILayout.Button("Value Changed"))
+        if(GUILayout.Button("Invoke On Value Changed"))
         {
             s.ValueChanged();
         }

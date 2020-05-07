@@ -11,6 +11,7 @@ public class Variable : ScriptableObject
     public virtual object GetValue() { return 0; }
     public virtual void ValueChanged()
     {
+        Debug.Log("Variable value changed");
         onSet?.Invoke();
     }
 }
