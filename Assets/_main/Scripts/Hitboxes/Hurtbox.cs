@@ -9,7 +9,7 @@ public class Hurtbox : MonoBehaviour
 {
     private Collider[] colliders;
 
-    public HurtboxEvent onHit;
+    public HurtboxEvent onHurt;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class Hurtbox : MonoBehaviour
 
     public void OnHit(HitData _hitData)
     {
-        onHit?.Invoke(_hitData);
+        onHurt?.Invoke(_hitData);
     }
 
 }

@@ -10,12 +10,12 @@ public class CharacterKnockBack : MonoBehaviour
 
     private void OnEnable()
     {
-        hurtbox.onHit += OnHurt;
+        hurtbox.onHurt += OnHurt;
     }
 
     private void OnDisable()
     {
-        hurtbox.onHit -= OnHurt;
+        hurtbox.onHurt -= OnHurt;
     }
 
 
