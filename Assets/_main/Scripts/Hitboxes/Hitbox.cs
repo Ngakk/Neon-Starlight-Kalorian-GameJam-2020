@@ -30,10 +30,13 @@ public class Hitbox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        hitData.direction = direction.forward;
-        hitData.sourcePosition = transform.position;
-        other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
-        hurtboxes.Add(other);
+        if (!hurtboxes.Contains(other))
+        {
+            hitData.direction = direction.forward;
+            hitData.sourcePosition = transform.position;
+            other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
+            hurtboxes.Add(other);
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -63,6 +66,8 @@ public class Hitbox : MonoBehaviour
 public class HitData
 {
     public float damage;
+    public float knockback;
+    public float knockbackTime;
     [HideInInspector] public Vector3 sourcePosition;
     [HideInInspector] public Vector3 direction;
 }
