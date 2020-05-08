@@ -5,18 +5,20 @@ using UnityEngine;
 public class Hitbox : MonoBehaviour
 {
     [Header("Setup")]
-    public Collider[] colliders;
     public Transform direction;
     [Header("Settings")]
     public HitData hitData;
 
+    private Collider[] colliders;
     private List<Collider> hurtboxes = new List<Collider>();
 
     private void Start()
     {
+        colliders = GetComponentsInChildren<Collider>();
         foreach (var c in colliders)
         {
             c.isTrigger = true;
+            c.gameObject.layer = 8;
         }
     }
 
@@ -44,7 +46,7 @@ public class Hitbox : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         if(direction)
         {

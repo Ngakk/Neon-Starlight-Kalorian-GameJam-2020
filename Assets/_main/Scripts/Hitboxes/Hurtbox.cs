@@ -8,15 +8,17 @@ public delegate void HurtboxEvent(HitData _hitData);
 public class Hurtbox : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigi;
-    [SerializeField] private Collider[] colliders;
+    private Collider[] colliders;
 
     public HurtboxEvent onHit;
 
     private void Start()
     {
-        foreach(var c in colliders)
+        colliders = GetComponentsInChildren<Collider>();
+        foreach (var c in colliders)
         {
             c.isTrigger = false;
+            c.gameObject.layer = 8;
         }
 
         if (!rigi) rigi = GetComponent<Rigidbody>();
