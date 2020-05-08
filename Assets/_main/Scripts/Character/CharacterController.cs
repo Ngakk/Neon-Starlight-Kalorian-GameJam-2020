@@ -11,8 +11,7 @@ public class CharacterController : MonoBehaviour
 
     private string movHor = "Horizontal";
     private string movVer = "Vertical";
-    private string camRight = "CamRight";
-    private string camLeft = "CamLeft";
+    private string atkBtn = "Attack";
 
     private float xSpeed;
     private float zSpeed;
@@ -39,12 +38,7 @@ public class CharacterController : MonoBehaviour
         xSpeed = Input.GetAxis(movHor) * movSpeed;
         zSpeed = Input.GetAxis(movVer) * movSpeed;
 
-        if (Input.GetButtonDown(camRight))
-            Rotate(+1);
-        if (Input.GetButtonDown(camLeft))
-            Rotate(-1);
-
-        isAttacking = Input.GetMouseButtonDown(0);
+        isAttacking = Input.GetButtonDown(atkBtn);
     }
 
     private void ProcessInputs()
@@ -53,20 +47,5 @@ public class CharacterController : MonoBehaviour
 
         if (isAttacking)
             charAct.Attack();
-    }
-
-    private void Rotate(int direction)
-    {
-        switch(direction)
-        {
-            case 1:
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y - 90, transform.rotation.eulerAngles.z);
-                break;
-            case -1:
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + 90, transform.rotation.eulerAngles.z);
-                break;
-            default:
-                break;
-        }
     }
 }
