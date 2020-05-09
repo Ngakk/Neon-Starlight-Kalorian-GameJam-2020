@@ -6,13 +6,74 @@ namespace Managers
 {
     public class ManagerUI : MonoBehaviour
     {
+        // Inventory
         public GameObject ingredientsPanel;
         public GameObject ingredientsContainer;
         public GameObject ingredientBtn_pfb;
 
+        // RecipeBook
+        public GameObject recipeBook;
+        public RecipePage pageA;
+        public RecipePage pageB;
+        private int currentPage;
+
         private void Awake()
         {
             ManagerStatic.uiManager = this;
+        }
+
+        public void ToggleRecipeBook(bool _bool)
+        {
+            if (_bool)
+                LoadRecipePages(0);
+
+            recipeBook.SetActive(_bool);
+        }
+
+        public void LoadRecipePages(int _index)
+        {
+            int indexA = _index * 2;
+            int indexB = indexA + 1;
+
+            List<Recipe_SO> recipes = ManagerStatic.inventoryManager.recipesLearned;
+
+            // Page A
+            if (indexA < recipes.Count)
+            {
+                pageA.SetRecipePage(recipes[indexA].recipeSpr, recipes[indexA].recipeName, recipes[indexA].ingredients);
+            } else
+            {
+                pageA.ClearPage();
+            }
+
+            // Page B
+            if (indexB < recipes.Count)
+            {
+                pageB.SetRecipePage(recipes[indexB].recipeSpr, recipes[indexB].recipeName, recipes[indexB].ingredients);
+            } else
+            {
+                pageB.ClearPage();
+            }
+
+            currentPage = _index;
+        }
+
+        public void NextRecipeBookPage()
+        {
+            if (currentPage < ManagerStatic.inventoryManager.recipesLearned.Count/2)
+            {
+                currentPage++;
+                LoadRecipePages(currentPage);
+            }
+        }
+
+        public void PrevRecipeBookRecipe()
+        {
+            if (currentPage > 0)
+            {
+                currentPage--;
+                LoadRecipePages(currentPage);
+            }
         }
 
         public void ToggleIngredientsPanel(bool _bool)

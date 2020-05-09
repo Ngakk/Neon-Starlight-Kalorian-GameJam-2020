@@ -6,10 +6,21 @@ namespace Managers {
     public class ManagerInventory : MonoBehaviour
     {
         public List<InventoryItem> ingredients = new List<InventoryItem>();
+        public List<Recipe_SO> recipesLearned = new List<Recipe_SO>();
 
         private void Awake()
         {
             ManagerStatic.inventoryManager = this;
+        }
+
+        public void LearnRecipe(Recipe_SO _recipe)
+        {
+            recipesLearned.Add(_recipe);
+        }
+
+        public void ClearRecipes()
+        {
+            recipesLearned.Clear();
         }
 
         public void AddIngredient(InventoryItem_SO _invItem)
