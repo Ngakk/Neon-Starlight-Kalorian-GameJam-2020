@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9301179a6633a4d92a75438fd366ef, type: 3}
   m_Name: Brochetitas
   m_EditorClassIdentifier: 
+  recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
   recipeName: Brochetitas
   ingredients:
   - {fileID: 11400000, guid: 9388c027b5848f24a8137a1507777d02, type: 2}
