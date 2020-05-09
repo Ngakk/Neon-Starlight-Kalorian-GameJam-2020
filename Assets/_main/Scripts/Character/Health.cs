@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [Header("Setup")]
     public Hurtbox hurtbox;
