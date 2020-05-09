@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [Header("Setup")]
     public Hurtbox hurtbox;
@@ -10,7 +10,7 @@ public class CharacterHealth : MonoBehaviour
     [Header("Settings")]
     public float maxHealth;
 
-    private float currentHealth;
+    public float currentHealth;
 
     private void OnEnable()
     {
