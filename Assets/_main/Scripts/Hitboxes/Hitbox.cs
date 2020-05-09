@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
-    [Header("Setup")]
-    public Transform direction;
     [Header("Settings")]
     public HitData hitData;
 
@@ -32,8 +30,8 @@ public class Hitbox : MonoBehaviour
     {
         if (!hurtboxes.Contains(other))
         {
-            hitData.direction = direction.forward;
             hitData.sourcePosition = transform.position;
+            hitData.direction = hitData.rotation * transform.forward;
             other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
             hurtboxes.Add(other);
         }
@@ -43,21 +41,21 @@ public class Hitbox : MonoBehaviour
     {
         if (!hurtboxes.Contains(other))
         {
-            hitData.direction = direction.forward;
             hitData.sourcePosition = transform.position;
+            hitData.direction = hitData.rotation * transform.forward;
             other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
         }
     }
 
     private void OnDrawGizmos()
     {
-        if(direction)
-        {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, transform.position + direction.forward);
-            Gizmos.DrawWireSphere(transform.position + direction.forward, 0.1f);
-            Gizmos.color = Color.white;
-        }
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position, transform.position + hitData.direction.normalized * 2f);
+        hitData.direction = hitData.rotation * transform.forward;
+        Gizmos.DrawWireSphere(transform.position + hitData.direction.normalized * 2f, 0.1f);
+        Gizmos.color = Color.white;
+
     }
 
 }
@@ -69,5 +67,6 @@ public class HitData
     public float knockback;
     public float knockbackTime;
     [HideInInspector] public Vector3 sourcePosition;
+    [HideInInspector] public Quaternion rotation;
     [HideInInspector] public Vector3 direction;
 }
