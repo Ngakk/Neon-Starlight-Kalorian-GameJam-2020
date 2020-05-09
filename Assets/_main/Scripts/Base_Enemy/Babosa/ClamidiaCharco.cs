@@ -14,7 +14,7 @@ public class ClamidiaCharco : MonoBehaviour
 
     private bool activated;
 
-    private void Activate()
+    public void Activate()
     {
         lastEnabledTime = Time.time;
         hitboxHolder.SetActive(true);
