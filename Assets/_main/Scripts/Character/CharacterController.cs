@@ -38,7 +38,7 @@ public class CharacterController : MonoBehaviour
         xSpeed = Input.GetAxis(movHor) * movSpeed;
         zSpeed = Input.GetAxis(movVer) * movSpeed;
 
-        isAttacking = Input.GetButtonDown(atkBtn);
+        isAttacking = Input.GetButtonDown(atkBtn) || Input.GetMouseButtonDown(0);
     }
 
     private void ProcessInputs()
@@ -46,6 +46,8 @@ public class CharacterController : MonoBehaviour
         charMov.Move(xSpeed, zSpeed);
 
         if (isAttacking)
+        {
             charAct.Attack();
+        }
     }
 }

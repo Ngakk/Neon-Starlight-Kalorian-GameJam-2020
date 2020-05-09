@@ -7,28 +7,31 @@ public delegate void HurtboxEvent(HitData _hitData);
 [RequireComponent(typeof(Rigidbody))]
 public class Hurtbox : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigi;
+    public Transform hurtboxParent;
     private Collider[] colliders;
 
-    public HurtboxEvent onHit;
+    public HurtboxEvent onHurt;
 
     private void Start()
     {
-        colliders = GetComponentsInChildren<Collider>();
+        colliders = hurtboxParent.GetComponentsInChildren<Collider>();
         foreach (var c in colliders)
         {
             c.isTrigger = false;
             c.gameObject.layer = 8;
+
+            var part = c.GetComponent<HurtboxMessenger>();
+            if (part == null)
+                part = c.gameObject.AddComponent<HurtboxMessenger>();
+
+            part.hurtbox = this;
         }
-
-        if (!rigi) rigi = GetComponent<Rigidbody>();
-
-        rigi.isKinematic = true;
     }
 
     public void OnHit(HitData _hitData)
     {
-        onHit?.Invoke(_hitData);
+        Debug.Log("Hurtbox onHit");
+        onHurt?.Invoke(_hitData);
     }
 
 }
