@@ -4990,6 +4990,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737207921}
   m_CullTransparentMesh: 0
+--- !u!1 &744031432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744031433}
+  - component: {fileID: 744031434}
+  - component: {fileID: 744031437}
+  - component: {fileID: 744031436}
+  - component: {fileID: 744031435}
+  m_Layer: 0
+  m_Name: BearerOfScripts
+  m_TagString: Persistent
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744031433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744031432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744031434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744031432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687a7507977d8a244b4e777ddd5f8547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnique: 1
+  uniqueName: BearerOfScripts
+--- !u!114 &744031435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744031432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ceddb7c45c7b6344a4c91f74edc18ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientsPanel: {fileID: 0}
+  ingredientsContainer: {fileID: 0}
+  ingredientBtn_pfb: {fileID: 0}
+  recipeBook: {fileID: 0}
+  pageA: {fileID: 0}
+  pageB: {fileID: 0}
+--- !u!114 &744031436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744031432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767824320bee9334bbb216d23b0cb1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients: []
+  recipesLearned: []
+--- !u!114 &744031437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744031432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12ad985e01f3f040b1fb5e9acda3263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPrefab: {fileID: 5648573535554482511, guid: 8aed862d807794f4985477a50cc11357,
+    type: 3}
 --- !u!1 &748917013
 GameObject:
   m_ObjectHideFlags: 0

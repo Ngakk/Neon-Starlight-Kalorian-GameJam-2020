@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioDrop))]
+[RequireComponent(typeof(AudioSource))]
 public class AudioDrop : MonoBehaviour
 {
     public AudioSource audioSource;
