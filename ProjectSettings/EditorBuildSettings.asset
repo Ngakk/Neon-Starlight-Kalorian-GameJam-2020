@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_main/Scenes/MonsterScenarios/MS_Lobster.unity
+    guid: 7e36819abd545da478f20bf096b2d0d1
+  - enabled: 1
+    path: Assets/_main/Scenes/MonsterScenarios/MS_Slug.unity
+    guid: 112795baca38f5a4f85b456991a231a6
+  - enabled: 1
+    path: Assets/_main/Scenes/MonsterScenarios/MS_Squid.unity
+    guid: 9e4928a01f26be842940b8ba4ed27458
   m_configObjects: {}

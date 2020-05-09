@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     public bool followY;
     public bool followZ;
     public bool lookAt;
+    public Vector3 lookAtOffset;
     public bool rotateWithTarget;
     public Vector3 rotationOffset;
 
@@ -27,7 +28,7 @@ public class CameraFollow : MonoBehaviour
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(target.transform.rotation.eulerAngles.x + rotationOffset.x, target.transform.rotation.eulerAngles.y + rotationOffset.y, target.transform.rotation.eulerAngles.z + rotationOffset.z), followSpeed);
 
             if (lookAt)
-                transform.LookAt(target.transform.position);
+                transform.LookAt(new Vector3(target.transform.position.x + lookAtOffset.x, target.transform.position.y + lookAtOffset.y, target.transform.position.z + lookAtOffset.z));
         }
     }
 }
