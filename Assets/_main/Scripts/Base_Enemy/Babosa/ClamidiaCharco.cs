@@ -12,11 +12,25 @@ public class ClamidiaCharco : MonoBehaviour
     private float lastBornTime;
     private float lastEnabledTime;
 
-    private void OnEnable()
+    private bool activated;
+
+    public void Activate()
+    {
+        Invoke("RealActivate", 0.8f);
+    }
+
+    private void RealActivate()
     {
         lastEnabledTime = Time.time;
         hitboxHolder.SetActive(true);
         lastBornTime = Time.time;
+        activated = true;
+    }
+
+    private void Start()
+    {
+        activated = false;
+        hitboxHolder.SetActive(false);
     }
 
     private void Update()
@@ -37,6 +51,7 @@ public class ClamidiaCharco : MonoBehaviour
 
     private void SelfDestroy()
     {
-        Destroy(gameObject);
+        hitboxHolder.SetActive(false);
+        activated = false;
     }
 }

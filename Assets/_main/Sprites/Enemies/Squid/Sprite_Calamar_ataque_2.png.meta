@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 096bde132576770469ae06fb9fe9c1dd
+guid: a9447948b07980244a40cf5a12fe62a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3912869077196777536
-    second: Sprite_Calamar_0
+      213: -3941033083934814718
+    second: Sprite_Calamar_ataque_2_0
   - first:
-      213: 570671653765005246
-    second: Sprite_Calamar_1
+      213: -249233151997433610
+    second: Sprite_Calamar_ataque_2_1
   - first:
-      213: -5460888543951540207
-    second: Sprite_Calamar_2
+      213: -3992531327440486493
+    second: Sprite_Calamar_ataque_2_2
   - first:
-      213: -3793810884373660333
-    second: Sprite_Calamar_3
+      213: -7538367917729269564
+    second: Sprite_Calamar_ataque_2_3
   - first:
-      213: 1754250865463143861
-    second: Sprite_Calamar_4
+      213: 7635164442505572632
+    second: Sprite_Calamar_ataque_2_4
   - first:
-      213: -4801531247350558262
-    second: Sprite_Calamar_5
+      213: 7166118641179651813
+    second: Sprite_Calamar_ataque_2_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,11 +117,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Calamar_0
+      name: Sprite_Calamar_ataque_2_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 662
+        y: 624
         width: 356
         height: 382
       alignment: 7
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c753193e42b2b9c0800000000000000
-      internalID: -3912869077196777536
+      spriteID: 20ec0086a43ae49c0800000000000000
+      internalID: -3941033083934814718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_1
+      name: Sprite_Calamar_ataque_2_1
       rect:
         serializedVersion: 2
-        x: 412
-        y: 667
-        width: 357
-        height: 382
+        x: 404
+        y: 630
+        width: 355
+        height: 362
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebf3c0678de6be700800000000000000
-      internalID: 570671653765005246
+      spriteID: 6f821fcc4cb8a8cf0800000000000000
+      internalID: -249233151997433610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_2
+      name: Sprite_Calamar_ataque_2_2
       rect:
         serializedVersion: 2
-        x: 841
-        y: 667
-        width: 358
-        height: 371
+        x: 20
+        y: 211
+        width: 353
+        height: 368
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 110b4c36dc60734b0800000000000000
-      internalID: -5460888543951540207
+      spriteID: 3af7a4939eda798c0800000000000000
+      internalID: -3992531327440486493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_3
+      name: Sprite_Calamar_ataque_2_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 217
+        width: 354
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8bb8d9156526790800000000000000
+      internalID: -7538367917729269564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_ataque_2_4
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 225
+        width: 355
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811fc3d8b9d85f960800000000000000
+      internalID: 7635164442505572632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_ataque_2_5
       rect:
         serializedVersion: 2
         x: 1272
-        y: 662
-        width: 359
-        height: 378
+        y: 242
+        width: 356
+        height: 384
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,50 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35db5e3e91da95bc0800000000000000
-      internalID: -3793810884373660333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 234
-        width: 354
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bd2ad22ed9585810800000000000000
-      internalID: 1754250865463143861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_5
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 241
-        width: 355
-        height: 387
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac15bb725c88d5db0800000000000000
-      internalID: -4801531247350558262
+      spriteID: 5ee61d9bfea237360800000000000000
+      internalID: 7166118641179651813
       vertices: []
       indices: 
       edges: []
@@ -245,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 28da634d1ae24544a9a788e91cc6b851
+    spriteID: d7cefe933c78a4143a28befe555829de
     internalID: 0
     vertices: []
     indices: 

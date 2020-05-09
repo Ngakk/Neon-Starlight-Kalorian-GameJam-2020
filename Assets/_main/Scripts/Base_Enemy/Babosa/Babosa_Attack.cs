@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Clamidia Attack State", menuName = "EnemyStates/Babosa/Attack")]
 public class Babosa_Attack : EnemyState
 {
+    public GameObject rain;
+
     private float timeCC;
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {

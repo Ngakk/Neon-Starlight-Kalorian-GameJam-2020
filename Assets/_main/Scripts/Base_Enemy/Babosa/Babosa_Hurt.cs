@@ -6,7 +6,6 @@ using UnityEngine;
 public class Babosa_Hurt : EnemyState
 {
     public float hurtTime = 1f;
-
     private float lastHurtTime;
 
     public override void OnStateEnter(EnemyBehaviour _behaviour)
