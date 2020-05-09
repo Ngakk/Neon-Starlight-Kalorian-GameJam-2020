@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     [Header("Settings")]
     public float maxHealth;
 
-    private float currentHealth;
+    public float currentHealth;
 
     private void OnEnable()
     {

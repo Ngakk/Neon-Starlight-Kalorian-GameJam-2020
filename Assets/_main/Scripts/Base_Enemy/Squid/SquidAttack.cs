@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SquidIdle : EnemyState
+public class SquidAttack : EnemyState
 {
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
@@ -11,7 +11,7 @@ public class SquidIdle : EnemyState
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
     {
-        
+
     }
 
     public override void OnStateUpdate(EnemyBehaviour _behaviour)

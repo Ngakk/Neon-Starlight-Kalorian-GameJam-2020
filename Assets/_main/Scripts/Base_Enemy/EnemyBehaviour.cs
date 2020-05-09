@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public delegate void EnemyBehaviourHurtEvent(HitData _hitData);
+
 public class EnemyBehaviour : MonoBehaviour
 {
     [HideInInspector] public CharacterMovement characterMovement;
@@ -14,9 +16,20 @@ public class EnemyBehaviour : MonoBehaviour
 
     public EnemyState idle, attack, hurt, die;
 
-    public UnityEvent onAttack, onHurt, onDie;
+    public UnityEvent onAttackUEvent, onHurtUEvent, onDieUEvent;
+    public EnemyBehaviourHurtEvent onHurt;
 
     private EnemyState currentState;
+
+    private void OnEnable()
+    {
+        hurtbox.onHurt += OnHurt;
+    }
+
+    private void OnDisable()
+    {
+        hurtbox.onHurt -= OnHurt;
+    }
 
     private void Start()
     {
@@ -39,5 +52,10 @@ public class EnemyBehaviour : MonoBehaviour
         currentState?.OnStateExit(this);
         currentState = _state;
         currentState.OnStateEnter(this);
+    }
+
+    void OnHurt(HitData _hitData)
+    {
+        onHurt?.Invoke(_hitData);
     }
 }

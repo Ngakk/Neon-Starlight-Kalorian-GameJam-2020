@@ -2,25 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SquidIdle : EnemyState
+public class SquidDie : EnemyState
 {
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
-        _behaviour.onHurt += OnHurt;
+        _behaviour.animator.SetTrigger("IsDead");
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
     {
-        
     }
 
     public override void OnStateUpdate(EnemyBehaviour _behaviour)
     {
-        _behaviour.onHurt -= OnHurt;
-    }
-
-    void OnHurt(HitData _hitData)
-    {
-
     }
 }
