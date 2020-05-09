@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &454405104726683056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3805264393195469957}
+  - component: {fileID: 2381358437221302459}
+  m_Layer: 0
+  m_Name: Hurtbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3805264393195469957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454405104726683056}
+  m_LocalRotation: {x: -0.49999967, y: -0, z: -0, w: 0.86602557}
+  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8519935299174483368}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -60.000004, y: 0, z: 0}
+--- !u!136 &2381358437221302459
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454405104726683056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.6
+  m_Height: 1.3
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.6, z: 0}
 --- !u!1 &8519935299174483371
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,9 +59,9 @@ GameObject:
   - component: {fileID: 8519935299174483374}
   - component: {fileID: 8519935299174483373}
   - component: {fileID: 8519935299174483369}
-  - component: {fileID: 8519935299174483372}
-  - component: {fileID: 5210050718560103299}
   - component: {fileID: 1076946915537367143}
+  - component: {fileID: 636919116}
+  - component: {fileID: 2128168901272209347}
   - component: {fileID: 2371568314932682876}
   m_Layer: 0
   m_Name: Character
@@ -38,6 +83,7 @@ Transform:
   m_Children:
   - {fileID: 8519935299931776487}
   - {fileID: 8519935300392813230}
+  - {fileID: 3805264393195469957}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -104,7 +150,7 @@ MonoBehaviour:
   anim: {fileID: 8519935299174483378}
   spriteRenderer: {fileID: 8519935299931776484}
   movement: {fileID: 8519935299174483374}
-  hurtbox: {fileID: 5210050718560103299}
+  hurtbox: {fileID: 636919116}
 --- !u!114 &8519935299174483369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,31 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movSpeed: 5
---- !u!65 &8519935299174483372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8519935299174483371}
-  m_Material: {fileID: 13400000, guid: 7edee67b9f024ff4c83b01c4563192b1, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &5210050718560103299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8519935299174483371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47062ee0d75e7894dacb796e594a7e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1076946915537367143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,9 +176,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bd702ce6ad4f440ab3d7c90c253129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hurtbox: {fileID: 5210050718560103299}
+  hurtbox: {fileID: 636919116}
   onDied: {fileID: 11400000, guid: cb1f64a00d19b134b941e6302a8560ce, type: 2}
   maxHealth: 100
+--- !u!114 &636919116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519935299174483371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47062ee0d75e7894dacb796e594a7e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtboxParent: {fileID: 3805264393195469957}
+--- !u!114 &2128168901272209347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519935299174483371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f4380ac8772754da8ecdf004b92f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 8519935299174483374}
+  hurtbox: {fileID: 636919116}
 --- !u!114 &2371568314932682876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,11 +223,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8519935299174483373}
-        m_MethodName: 
+        m_MethodName: Die
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8519935299174483374}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
