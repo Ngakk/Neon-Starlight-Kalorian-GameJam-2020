@@ -10,6 +10,11 @@ public class GenerateEnum
     {
         AudioClipListVariable aclv = Resources.Load<AudioClipListVariable>("Audio/AudioClipListVariable");
 
+        if (!aclv)
+        {
+            Debug.LogWarning("Couldn't find AudioClipList in it's resource path");
+            return;
+        }
         string enumName = "DeezNuts";
         string[] enumEntries = new string[aclv.clipGroups.Count];
 

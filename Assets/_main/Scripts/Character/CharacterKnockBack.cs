@@ -5,8 +5,8 @@ using DG.Tweening;
 
 public class CharacterKnockBack : MonoBehaviour
 {
-    [SerializeField] private CharacterMovement movement;
-    [SerializeField] private Hurtbox hurtbox;
+    [SerializeField] private CharacterMovement movement = null;
+    [SerializeField] private Hurtbox hurtbox = null;
 
     private void OnEnable()
     {

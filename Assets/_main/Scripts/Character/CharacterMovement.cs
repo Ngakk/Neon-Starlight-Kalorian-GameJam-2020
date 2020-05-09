@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public float influence = 1f;
 
     private Vector3 finalVel;
+    private bool isDead;
 
     void Start()
     {
@@ -21,6 +22,9 @@ public class CharacterMovement : MonoBehaviour
     public void Move(float _x, float _z)
     {
         finalVel = new Vector3(_x, 0, _z);
+
+        if (isDead) finalVel = Vector3.zero;
+
         float clampedInfluence = Mathf.Clamp(influence, 0, 1);
         rig.velocity = finalVel * clampedInfluence + externalVelocity * (1 - clampedInfluence);
         if (clampedInfluence >= 1)
@@ -45,6 +49,11 @@ public class CharacterMovement : MonoBehaviour
     public Vector3 GetVelocity()
     {
         return finalVel;
+    }
+
+    public void Die()
+    {
+        isDead = true;
     }
 }
 
