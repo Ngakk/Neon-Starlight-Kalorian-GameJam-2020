@@ -71,4 +71,9 @@ public class CharacterActions : MonoBehaviour
     {
         anim.SetTrigger("Hurt");
     }
+
+    void Die()
+    {
+
+    }
 }
