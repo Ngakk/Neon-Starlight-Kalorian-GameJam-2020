@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd9e1229aab5c648a8764452f3dbb94, type: 3}
   m_Name: AudioClipListVariable
   m_EditorClassIdentifier: 
-  clipGroups: []
+  clipGroups:
+  - name: Test
+    clips:
+    - {fileID: 8300000, guid: d198802a4886fdc4f818aded6f5edd65, type: 3}
+    - {fileID: 8300000, guid: 99b7bd23d93fe9b4db4b54f2f653f011, type: 3}
+    - {fileID: 8300000, guid: 8b4da8525a64d0c4db7c3d7e31179d64, type: 3}

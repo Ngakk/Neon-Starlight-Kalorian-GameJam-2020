@@ -25,5 +25,6 @@ namespace Managers
     {
         public static ManagerInventory inventoryManager;
         public static ManagerUI uiManager;
+        public static ManagerAudio audioManager;
     }
 }
