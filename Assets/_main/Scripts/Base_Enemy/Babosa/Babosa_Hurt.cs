@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Hurt State", menuName = "EnemyStates/Hurt")]
-public class SquidHurt : EnemyState
+[CreateAssetMenu(fileName = "Clamidia Hurt State", menuName = "EnemyStates/Babosa/Hurt")]
+public class Babosa_Hurt : EnemyState
 {
     public float hurtTime = 1f;
 
@@ -18,8 +18,8 @@ public class SquidHurt : EnemyState
         }
         else
         {
-            Debug.Log("Calling squid animator");
-            _behaviour.animator.SetTrigger("Take_Damage");
+            Debug.Log("Calling Clamidia animator");
+            _behaviour.animator.SetTrigger("ReciveDamage");
             _behaviour.onHurtUEvent?.Invoke();
         }
         lastHurtTime = Time.time;

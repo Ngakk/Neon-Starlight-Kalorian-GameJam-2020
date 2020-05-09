@@ -2,26 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Squid Attack State", menuName = "EnemyStates/Attack")]
-public class SquidAttack : EnemyState
+[CreateAssetMenu(fileName = "Clamidia Die State", menuName = "EnemyStates/Babosa/Die")]
+public class Babaosa_Die : EnemyState
 {
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
-        _behaviour.onHurt += OnHurt;
+        _behaviour.animator.SetTrigger("isDead");
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
     {
-        _behaviour.onHurt -= OnHurt;
+
     }
 
     public override void OnStateUpdate(EnemyBehaviour _behaviour)
     {
         
-    }
-
-    void OnHurt(HitData _hitData, EnemyBehaviour _behaviour)
-    {
-
     }
 }

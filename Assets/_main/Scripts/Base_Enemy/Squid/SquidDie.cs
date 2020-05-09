@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Die State", menuName = "EnemyStates/Die")]
 public class SquidDie : EnemyState
 {
     public override void OnStateEnter(EnemyBehaviour _behaviour)

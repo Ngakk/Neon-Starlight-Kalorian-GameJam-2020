@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public delegate void EnemyBehaviourHurtEvent(HitData _hitData);
+public delegate void EnemyBehaviourHurtEvent(HitData _hitData, EnemyBehaviour _behaviour);
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -56,6 +56,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     void OnHurt(HitData _hitData)
     {
-        onHurt?.Invoke(_hitData);
+        Debug.Log("Enemy On Hurt");
+        onHurt?.Invoke(_hitData, this);
     }
 }
