@@ -25,10 +25,6 @@ public class Enemy_base : MonoBehaviour
 
     private void Update() 
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            Debug.Log("Loot de esto: " +  enemy_Actions.DropLoot().name);
-        }
         GetValueActions();
         ProcessActions();
     }

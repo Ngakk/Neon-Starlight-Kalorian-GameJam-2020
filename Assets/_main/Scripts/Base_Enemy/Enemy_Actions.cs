@@ -37,6 +37,10 @@ public class Enemy_Actions : MonoBehaviour
         {
             if(randomNumber <= x.percentage)
             {
+                Debug.Log("Loot de esto: " +  x.objectToSpawn.name);
+                Vector3 spawn = gameObject.transform.position;
+                spawn += new Vector3 (0.0f, 0.0f, 0.1f);
+                Instantiate(x.objectToSpawn, spawn, Quaternion.identity);
                 return x.objectToSpawn;
             }
             else
