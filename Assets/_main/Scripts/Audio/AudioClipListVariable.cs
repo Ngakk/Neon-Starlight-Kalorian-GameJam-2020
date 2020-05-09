@@ -32,7 +32,7 @@ public class AudioClipListVariable : ScriptableObject
 
     public AudioClip GetRandomClip(DeezNuts _group)
     {
-        var group = clipGroups[Addresses[_group]].clips;
+        var group = clipGroups[(int)_group].clips;
         return group[Random.Range(0, group.Count)];
     }
 

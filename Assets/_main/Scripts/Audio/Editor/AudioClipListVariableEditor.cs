@@ -24,6 +24,7 @@ public class AudioClipListVariableEditor : Editor
             if(GUILayout.Button("Remove", GUILayout.MaxWidth(50f), GUILayout.MinWidth(25f), GUILayout.ExpandWidth(true)))
             {
                 t.RemoveGroup(t.clipGroups[i].name);
+                GenerateEnums();
             }
             GUILayout.EndHorizontal();
 
@@ -78,6 +79,7 @@ public class AudioClipListVariableEditor : Editor
             {
                 t.clipGroups.Add(new AudioClipListVariable.AudioClipGroup(newGroupName));
                 newGroupName = "";
+                GenerateEnums();
             }
             else
                 showError = true;
@@ -90,4 +92,8 @@ public class AudioClipListVariableEditor : Editor
         }
     }
 
+    void GenerateEnums()
+    {
+        GenerateEnum.Go();
+    }
 }
