@@ -21,18 +21,6 @@ public class CharacterController : MonoBehaviour
     private CharacterMovement charMov;
     private CharacterActions charAct;
 
-    private Dictionary<int, int> dirFromHash = new Dictionary<int, int>()
-    {
-        [20] = 0, [21] = 0, [19] = 0,
-        [10] = 1, [11] = 1, [12] = 1,
-        [2] = 2, [1] = 2,
-        [-10] = 3, [-9] = 3, [-8] = 3,
-        [-21] = 4, [-20] = 4, [-19] = 4,
-        [-10] = 5, [-11] = 5, [-12] = 5,
-        [-2] = 6, [-1] = 6,
-        [10] = 7, [9] = 7, [8] = 7,
-    };
-
     void Start()
     {
         charMov = GetComponent<CharacterMovement>();
@@ -50,7 +38,7 @@ public class CharacterController : MonoBehaviour
         xSpeed = Input.GetAxis(movHor) * movSpeed;
         zSpeed = Input.GetAxis(movVer) * movSpeed;
 
-        isAttacking = Input.GetButtonDown(atkBtn);
+        isAttacking = Input.GetButtonDown(atkBtn) || Input.GetMouseButtonDown(0);
     }
 
     private void ProcessInputs()

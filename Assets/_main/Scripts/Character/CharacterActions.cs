@@ -74,6 +74,7 @@ public class CharacterActions : MonoBehaviour
 
     void Die()
     {
-
+        anim.SetTrigger("Die");
+        movement.influence = 0;
     }
 }
