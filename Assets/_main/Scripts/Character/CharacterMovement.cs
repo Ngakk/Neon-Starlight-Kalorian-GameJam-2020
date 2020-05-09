@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 externalVelocity;
     public float influence = 1f;
 
+    private Vector3 finalVel;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class CharacterMovement : MonoBehaviour
 
     public void Move(float _x, float _z)
     {
-        Vector3 finalVel = new Vector3(_x, 0, _z);
+        finalVel = new Vector3(_x, 0, _z);
         float clampedInfluence = Mathf.Clamp(influence, 0, 1);
         rig.velocity = finalVel * clampedInfluence + externalVelocity * (1 - clampedInfluence);
         if (clampedInfluence >= 1)
@@ -39,6 +40,11 @@ public class CharacterMovement : MonoBehaviour
     public void RestoreInfluence(float _time)
     {
         DOTween.To(() => { return influence; }, (x) => { influence = x; }, 1f, _time).SetEase(Ease.OutQuad);
+    }
+
+    public Vector3 GetVelocity()
+    {
+        return finalVel;
     }
 }
 
