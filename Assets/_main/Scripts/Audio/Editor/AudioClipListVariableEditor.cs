@@ -54,7 +54,7 @@ public class AudioClipListVariableEditor : Editor
             }
             GUILayout.EndHorizontal();
         }
-
+        
         GUILayout.BeginHorizontal();
         GUILayout.Label("New group name: ", GUILayout.MinWidth(10), GUILayout.ExpandWidth(false));
 

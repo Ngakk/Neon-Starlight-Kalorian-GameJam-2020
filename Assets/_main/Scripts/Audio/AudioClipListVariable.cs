@@ -30,6 +30,12 @@ public class AudioClipListVariable : ScriptableObject
         return group[Random.Range(0, group.Count)];
     }
 
+    public AudioClip GetRandomClip(DeezNuts _group)
+    {
+        var group = clipGroups[Addresses[_group]].clips;
+        return group[Random.Range(0, group.Count)];
+    }
+
     public void RemoveGroup(string _name)
     {
         clipGroups.RemoveAt(Addresses[_name]);
