@@ -10,6 +10,7 @@ public class CharacterActions : MonoBehaviour
     public Hurtbox hurtbox;
 
     private Camera cam;
+    private bool isHurt, isDead;
     //private readonly int IsWalkingId = Animator.StringToHash
 
     private void OnEnable()
@@ -29,8 +30,13 @@ public class CharacterActions : MonoBehaviour
 
     private void Update()
     {
-        if (movement.influence > 0.9f)
-        {
+        if (movement.influence > 0.9f && !isDead)
+        { 
+            if(isHurt)
+            {
+                isHurt = false;
+                anim.SetTrigger("Recover");
+            }
             anim.SetBool("IsWalking", movement.GetVelocity().magnitude > float.Epsilon);
             Vector3 forward = Vector3.ProjectOnPlane(cam.transform.forward, Vector3.up).normalized;
             Vector3 right = Vector3.ProjectOnPlane(cam.transform.right, Vector3.up).normalized;
@@ -48,16 +54,19 @@ public class CharacterActions : MonoBehaviour
             else
             {
                 anim.SetInteger("WalkMode", 0);
-                Debug.Log("Side dot: " + sideDot);
                 if(sideDot < 0)
                 {
-                    gameObject.transform.localScale = new Vector3(-1, 1, 1);
+                    spriteRenderer.gameObject.transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else
                 {
-                    gameObject.transform.localScale = new Vector3(1, 1, 1);
+                    spriteRenderer.gameObject.transform.localScale = new Vector3(1, 1, 1);
                 }
             }
+        }
+        if(movement.influence >= 1 && isDead)
+        {
+            anim.SetBool("IsDead", true);
         }
     }
 
@@ -70,11 +79,15 @@ public class CharacterActions : MonoBehaviour
     void OnHurt(HitData _hitData)
     {
         anim.SetTrigger("Hurt");
+        isHurt = true;
     }
 
-    void Die()
+    public void Die()
     {
-        anim.SetTrigger("Die");
+        //anim.ResetTrigger("Hurt");
+        //isHurt = false;
+        //anim.SetBool("IsDead", true);
+        isDead = true;
         movement.influence = 0;
     }
 }
