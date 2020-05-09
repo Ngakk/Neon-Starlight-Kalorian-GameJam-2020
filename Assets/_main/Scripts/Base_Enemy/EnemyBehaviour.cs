@@ -56,6 +56,6 @@ public class EnemyBehaviour : MonoBehaviour
 
     void OnHurt(HitData _hitData)
     {
-        onHurt?.Invoke(_hitData);
+        onHurt?.Invoke(_hitData, this);
     }
 }
