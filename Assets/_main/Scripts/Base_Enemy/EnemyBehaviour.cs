@@ -56,7 +56,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     void OnHurt(HitData _hitData)
     {
-        Debug.Log("Squid On Hurt");
+        Debug.Log("Enemy On Hurt");
         onHurt?.Invoke(_hitData, this);
     }
 }

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Squid Idle State", menuName = "EnemyStates/Idle")]
-public class SquidIdle : EnemyState
+[CreateAssetMenu(fileName = "Clamidia Attack State", menuName = "EnemyStates/Babosa/Attack")]
+public class Babosa_Attack : EnemyState
 {
+    private float timeCC;
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
-        Debug.Log("Idle state enter");
+        Debug.Log("Attack state enter");
         _behaviour.onHurt += OnHurt;
+        _behaviour.animator.SetTrigger("MakeDamage");
+        timeCC = Time.time;
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
@@ -18,12 +21,15 @@ public class SquidIdle : EnemyState
 
     public override void OnStateUpdate(EnemyBehaviour _behaviour)
     {
-
+        if(Time.time > timeCC + 2.0f)
+        {
+            _behaviour.ChangeState(_behaviour.idle);
+        }
     }
 
     void OnHurt(HitData _hitData, EnemyBehaviour _behaviour)
     {
-        Debug.Log("Idle on hurt");
+        Debug.Log("Attack on hurt");
         _behaviour.ChangeState(_behaviour.hurt);
     }
 }
