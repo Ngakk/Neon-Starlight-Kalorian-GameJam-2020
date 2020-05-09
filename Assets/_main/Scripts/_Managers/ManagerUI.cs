@@ -6,9 +6,15 @@ namespace Managers
 {
     public class ManagerUI : MonoBehaviour
     {
+        // Inventory
         public GameObject ingredientsPanel;
         public GameObject ingredientsContainer;
         public GameObject ingredientBtn_pfb;
+
+        // RecipeBook
+        public GameObject recipeBook;
+        public GameObject pageA;
+        public GameObject pageB;
 
         private void Awake()
         {

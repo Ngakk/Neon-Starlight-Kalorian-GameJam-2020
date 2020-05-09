@@ -7,6 +7,7 @@ using Managers;
 
 public class Recipe_SO : ScriptableObject
 {
+    public Sprite recipeSpr;
     public string recipeName;
     public InventoryItem_SO[] ingredients;
 }
