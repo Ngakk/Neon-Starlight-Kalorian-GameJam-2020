@@ -31,7 +31,7 @@ public class Hitbox : MonoBehaviour
         if (!hurtboxes.Contains(other))
         {
             hitData.sourcePosition = transform.position;
-            hitData.direction = hitData.rotation * transform.forward;
+            hitData.direction = hitData.rotation * Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
             other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
             hurtboxes.Add(other);
         }
@@ -42,7 +42,7 @@ public class Hitbox : MonoBehaviour
         if (!hurtboxes.Contains(other))
         {
             hitData.sourcePosition = transform.position;
-            hitData.direction = hitData.rotation * transform.forward;
+            hitData.direction = hitData.rotation * Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
             other.SendMessage("OnHit", hitData, SendMessageOptions.DontRequireReceiver);
         }
     }
@@ -52,7 +52,7 @@ public class Hitbox : MonoBehaviour
 
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + hitData.direction.normalized * 2f);
-        hitData.direction = hitData.rotation * transform.forward;
+        hitData.direction = hitData.rotation * Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
         Gizmos.DrawWireSphere(transform.position + hitData.direction.normalized * 2f, 0.1f);
         Gizmos.color = Color.white;
 
