@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public delegate void EnemyBehaviourHurtEvent(HitData _hitData);
+public delegate void EnemyBehaviourHurtEvent(HitData _hitData, EnemyBehaviour _behaviour);
 
 public class EnemyBehaviour : MonoBehaviour
 {

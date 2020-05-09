@@ -19,8 +19,8 @@ public class SquidIdle : EnemyState
         _behaviour.onHurt -= OnHurt;
     }
 
-    void OnHurt(HitData _hitData)
+    void OnHurt(HitData _hitData, EnemyBehaviour _behaviour)
     {
-
+        
     }
 }
