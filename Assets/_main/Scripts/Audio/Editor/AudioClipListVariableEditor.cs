@@ -90,10 +90,12 @@ public class AudioClipListVariableEditor : Editor
         {
             EditorGUILayout.HelpBox("Name is already taken", MessageType.Error);
         }
+        EditorUtility.SetDirty(t);
     }
 
     void GenerateEnums()
     {
         GenerateEnum.Go();
+
     }
 }

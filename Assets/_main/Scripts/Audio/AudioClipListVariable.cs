@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AudioClipListVariable", menuName = "Audio Clip List")]
 public class AudioClipListVariable : ScriptableObject
 {
+    public static string resourcePath = "Audio/AudioClipListVariable";
+
     public List<AudioClipGroup> clipGroups = new List<AudioClipGroup>();
 
     private Dictionary<string, int> addresses;
