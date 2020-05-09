@@ -33,5 +33,4 @@ public class Hurtbox : MonoBehaviour
         Debug.Log("Hurtbox onHit", gameObject);
         onHurt?.Invoke(_hitData);
     }
-
 }
