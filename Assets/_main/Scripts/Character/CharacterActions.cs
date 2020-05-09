@@ -63,6 +63,7 @@ public class CharacterActions : MonoBehaviour
 
     public void Attack()
     {
+        anim.SetBool("IsWalking", false);
         anim.SetTrigger("Slash");
     }
 

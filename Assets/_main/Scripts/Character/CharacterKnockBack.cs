@@ -18,7 +18,6 @@ public class CharacterKnockBack : MonoBehaviour
         hurtbox.onHurt -= OnHurt;
     }
 
-
     void OnHurt(HitData _hitData)
     {
         movement.RemoveInfluence();
