@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 096bde132576770469ae06fb9fe9c1dd
+guid: 9d089e86d7e3fa54499bf4be8b4a999b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3912869077196777536
-    second: Sprite_Calamar_0
+      213: -7151651463637101936
+    second: "Sprite_Calamar_da\xF1o_0"
   - first:
-      213: 570671653765005246
-    second: Sprite_Calamar_1
+      213: -7626364210788090667
+    second: "Sprite_Calamar_da\xF1o_1"
   - first:
-      213: -5460888543951540207
-    second: Sprite_Calamar_2
+      213: 5889303504340127393
+    second: "Sprite_Calamar_da\xF1o_2"
   - first:
-      213: -3793810884373660333
-    second: Sprite_Calamar_3
+      213: 4436682080305981518
+    second: "Sprite_Calamar_da\xF1o_3"
   - first:
-      213: 1754250865463143861
-    second: Sprite_Calamar_4
+      213: -4704621621797939674
+    second: "Sprite_Calamar_da\xF1o_4"
   - first:
-      213: -4801531247350558262
-    second: Sprite_Calamar_5
+      213: -4585867955958468450
+    second: "Sprite_Calamar_da\xF1o_5"
+  - first:
+      213: 4548388616257035638
+    second: "Sprite_Calamar_da\xF1o_6"
+  - first:
+      213: 356326153051258978
+    second: "Sprite_Calamar_da\xF1o_7"
+  - first:
+      213: -2427599337524260166
+    second: "Sprite_Calamar_da\xF1o_8"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,117 +126,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Calamar_0
+      name: "Sprite_Calamar_da\xF1o_0"
       rect:
         serializedVersion: 2
         x: 5
-        y: 662
+        y: 1019
         width: 356
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c753193e42b2b9c0800000000000000
-      internalID: -3912869077196777536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_1
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 667
-        width: 357
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebf3c0678de6be700800000000000000
-      internalID: 570671653765005246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_2
-      rect:
-        serializedVersion: 2
-        x: 841
-        y: 667
-        width: 358
-        height: 371
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 110b4c36dc60734b0800000000000000
-      internalID: -5460888543951540207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_3
-      rect:
-        serializedVersion: 2
-        x: 1272
-        y: 662
-        width: 359
-        height: 378
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35db5e3e91da95bc0800000000000000
-      internalID: -3793810884373660333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 234
-        width: 354
-        height: 382
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bd2ad22ed9585810800000000000000
-      internalID: 1754250865463143861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite_Calamar_5
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 241
-        width: 355
         height: 387
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -236,8 +140,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac15bb725c88d5db0800000000000000
-      internalID: -4801531247350558262
+      spriteID: 092128882ea30cc90800000000000000
+      internalID: -7151651463637101936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_1"
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1020
+        width: 349
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc39301826b92690800000000000000
+      internalID: -7626364210788090667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_2"
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1034
+        width: 362
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae08a695520bb150800000000000000
+      internalID: 5889303504340127393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_3"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 611
+        width: 361
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48aaf178d2429d30800000000000000
+      internalID: 4436682080305981518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_4"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 617
+        width: 358
+        height: 381
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269c16af83d5beb0800000000000000
+      internalID: -4704621621797939674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_5"
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 611
+        width: 363
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90bf3a1469bb50c0800000000000000
+      internalID: -4585867955958468450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_6"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 53
+        width: 351
+        height: 380
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d5e6c195f1f1f30800000000000000
+      internalID: 4548388616257035638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_7"
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 61
+        width: 356
+        height: 387
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2604dc09fbce1f400800000000000000
+      internalID: 356326153051258978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Sprite_Calamar_da\xF1o_8"
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 53
+        width: 390
+        height: 387
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab294e5b34f6f4ed0800000000000000
+      internalID: -2427599337524260166
       vertices: []
       indices: 
       edges: []
@@ -245,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 28da634d1ae24544a9a788e91cc6b851
+    spriteID: e01e5306e2dd125408b40499270767f0
     internalID: 0
     vertices: []
     indices: 
