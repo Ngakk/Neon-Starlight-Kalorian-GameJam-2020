@@ -9,6 +9,11 @@ public class CharacterAttackStateMachineBehaviour : StateMachineBehaviour
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
 
+        if(movement == null)
+        {
+            movement = animator.GetComponent<CharacterMovement>();
+        }
+
         movement.influence = 0;
     }
 
