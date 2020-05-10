@@ -10,6 +10,8 @@ public class Babosa_Idle : EnemyState
         timeStamp = Time.time;
         Debug.Log("Idle state enter");
         _behaviour.onHurt += OnHurt;
+        float difficulty = Mathf.InverseLerp(_behaviour.ownHealth.maxHealth, 20, _behaviour.ownHealth.currentHealth);
+        randCooldown = Random.Range((1.2f - difficulty) * 3f, (1.2f - difficulty) * 5f);
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
@@ -17,24 +19,15 @@ public class Babosa_Idle : EnemyState
         _behaviour.onHurt -= OnHurt;
     }
 
-    private bool canAttack = true;
     private float timeStamp;
     private float numRand;
     private float randCooldown;
 
     public override void OnStateUpdate(EnemyBehaviour _behaviour)
     {
-        numRand = Random.Range(0.0f, 1.0f);
-        if(canAttack && numRand <= 0.1f)
-        {
-            timeStamp = Time.time;
-            randCooldown = Random.Range(10.0f, 15.0f);
-            canAttack = false;
-             _behaviour.ChangeState(_behaviour.attack);
-        }
         if(Time.time > timeStamp + randCooldown)
         {
-            canAttack = true;
+            _behaviour.ChangeState(_behaviour.attack);
         }
     }
 

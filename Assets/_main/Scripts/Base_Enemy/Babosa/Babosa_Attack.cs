@@ -5,14 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Clamidia Attack State", menuName = "EnemyStates/Babosa/Attack")]
 public class Babosa_Attack : EnemyState
 {
-    public GameObject rain;
-
     private float timeCC;
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
         Debug.Log("Attack state enter");
         _behaviour.onHurt += OnHurt;
         _behaviour.animator.SetTrigger("MakeDamage");
+        _behaviour.onAttackUEvent?.Invoke();
         timeCC = Time.time;
     }
 

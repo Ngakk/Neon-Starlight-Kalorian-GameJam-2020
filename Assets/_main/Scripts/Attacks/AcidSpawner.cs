@@ -9,6 +9,7 @@ public class AcidSpawner : MonoBehaviour
     public GameObject acidIndicator;
     public GameObject acidPfb;
     public Vector3 spawnOffset;
+    public Vector3 startingSpeed;
 
     public void SpawnAcid(int _ammount)
     {
@@ -30,6 +31,10 @@ public class AcidSpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(_delay);
         GameObject drop = Instantiate(acidPfb, new Vector3(_pos.x + spawnOffset.x, _pos.y + spawnOffset.y, _pos.z + spawnOffset.z), acidPfb.transform.rotation);
+        var comp = drop.GetComponent<Rigidbody>();
+        if (comp)
+            comp.velocity = startingSpeed;
+
         Destroy(drop, 2.0f);
     }
 }
