@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9301179a6633a4d92a75438fd366ef, type: 3}
   m_Name: Rollito Marino
   m_EditorClassIdentifier: 
-  recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  recipeSpr: {fileID: 21300000, guid: 4932af5d95b1a7e4d9217a386333003f, type: 3}
   recipeName: Ocean Roll
   ingredients:
   - {fileID: 11400000, guid: 0ccb3faf5ea4d3549a3eec27211678dd, type: 2}
