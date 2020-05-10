@@ -10,20 +10,26 @@ public class MasterAudioGenerator : MonoBehaviour
     void Start()
     {
         audio = ManagerStatic.audioManager;
+        Invoke("MenuMusic", 0.1f);
     }
 
     public void UI_ClickSound()
     {
-        audio.PlaySoundGlobal(DeezNuts.UI_CLICK);
+        audio.PlaySoundGlobal(DeezNuts.UI_CLICK, 1, Mixer.SFX);
     }
 
     public void FightMusic()
     {
-        audio.PlaySoundGlobalLoop(DeezNuts.FIGHT_MUSIC, 0);
+        audio.PlaySoundGlobalLoop(DeezNuts.FIGHT_MUSIC, 0, Mixer.MUSIC);
     }
 
     public void MenuMusic()
     {
-        audio.PlaySoundGlobalLoop(DeezNuts.BACKGROUNDMUSIC, 0);
+        audio.PlaySoundGlobalLoop(DeezNuts.BACKGROUNDMUSIC, 0, Mixer.MUSIC);
+    }
+
+    public void UI_SelectLevel()
+    {
+        audio.PlaySoundGlobal(DeezNuts.UI_CLICK, 2, Mixer.SFX);
     }
 }

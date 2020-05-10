@@ -14,11 +14,11 @@ public class ClamidiaSFX : MonoBehaviour
 
     public void GruntSound()
     {
-        audio.PlaySound(DeezNuts.CLAMIDIA_SFX, 1, transform.position);
+        audio.PlaySound(DeezNuts.CLAMIDIA_SFX, 1, transform.position, Mixer.SFX);
     }
 
     public void DieSound()
     {
-        audio.PlaySound(DeezNuts.CLAMIDIA_SFX, 2, transform.position);
+        audio.PlaySound(DeezNuts.CLAMIDIA_SFX, 2, transform.position, Mixer.SFX);
     }
 }
