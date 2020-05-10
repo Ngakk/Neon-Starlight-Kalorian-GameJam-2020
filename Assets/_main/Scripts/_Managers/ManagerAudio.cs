@@ -30,10 +30,26 @@ namespace Managers
             ad.Play();
         }
 
+        public void PlaySound(DeezNuts _group, int sound, Vector3 _pos)
+        {
+            var ad = PoolManager.Spawn(audioPrefab.gameObject, _pos, Quaternion.identity).GetComponent<AudioDrop>();
+            ad.audioSource.clip = audioList.clipGroups[(int)_group].clips[sound];
+            ad.audioSource.spatialize = false;
+            ad.Play();
+        }
+
         public void PlaySoundGlobal(DeezNuts _group)
         {
             var ad = PoolManager.Spawn(audioPrefab.gameObject, Vector3.zero, Quaternion.identity).GetComponent<AudioDrop>();
             ad.audioSource.clip = audioList.GetRandomClip(_group);
+            ad.audioSource.spatialize = false;
+            ad.Play();
+        }
+
+        public void PlaySoundGlobal(DeezNuts _group, int sound)
+        {
+            var ad = PoolManager.Spawn(audioPrefab.gameObject, Vector3.zero, Quaternion.identity).GetComponent<AudioDrop>();
+            ad.audioSource.clip = audioList.clipGroups[(int)_group].clips[sound];
             ad.audioSource.spatialize = false;
             ad.Play();
         }
