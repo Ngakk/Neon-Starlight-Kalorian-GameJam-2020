@@ -21,6 +21,7 @@ public class CharacterSFX : MonoBehaviour
     void Start()
     {
         audio = ManagerStatic.audioManager;
+        InvokeRepeating("BreathSound", 1, 4);
     }
 
     public void StepSound()
