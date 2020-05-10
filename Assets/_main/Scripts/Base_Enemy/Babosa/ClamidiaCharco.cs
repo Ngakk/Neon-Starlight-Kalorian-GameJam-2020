@@ -35,6 +35,7 @@ public class ClamidiaCharco : MonoBehaviour
 
     private void Update()
     {
+        if (!activated) return;
         if (!hitboxHolder.activeSelf) hitboxHolder.SetActive(true);
 
         if(Time.time > lastEnabledTime + timeToDisable)
