@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638b917af13552d4684e34c6dd610b85, type: 3}
   m_Name: Cuerpo de Babosa
   m_EditorClassIdentifier: 
-  ingredientSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  ingredientSpr: {fileID: 21300000, guid: ef050076182aaa04fb26edf678a1f514, type: 3}
   ingredientName: Cuerpo de Babosa

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9301179a6633a4d92a75438fd366ef, type: 3}
   m_Name: Tenaza Francesa
   m_EditorClassIdentifier: 
-  recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  recipeSpr: {fileID: 21300000, guid: 0fb7e6f384fd87d459788dd7de6211ea, type: 3}
   recipeName: Tenaza Francesa
   ingredients:
   - {fileID: 11400000, guid: ea2b577a253d3194198ed229d435c9e7, type: 2}

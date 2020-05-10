@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638b917af13552d4684e34c6dd610b85, type: 3}
   m_Name: Cola de Langosta
   m_EditorClassIdentifier: 
-  ingredientSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  ingredientSpr: {fileID: 21300000, guid: 0036ec1bfade2414aadcdfaefa292bc4, type: 3}
   ingredientName: Cola de Langosta

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Managers
@@ -20,7 +21,13 @@ namespace Managers
         public GameObject recipeBook;
         public RecipePage pageA;
         public RecipePage pageB;
+        public TextMeshProUGUI recipesUnlockedQty;
+        public TextMeshProUGUI recipesTotalQty;
         private int currentPage;
+
+        [Header("Map")]
+        public GameObject knifeTarget;
+        public Animator knifeAnim;
 
         private void Awake()
         {
@@ -138,6 +145,19 @@ namespace Managers
             }
 
             _panel.SetActive(true);
+        }
+
+        public void UpdateRecipesUnlock()
+        {
+            recipesUnlockedQty.text = ManagerStatic.inventoryManager.recipesLearned.Count.ToString();
+            recipesTotalQty.text = ManagerStatic.recipesManager.allRecipes.Count.ToString();
+        }
+
+        public void RepositionMapKnife(GameObject _go)
+        {
+            Vector3 pos = _go.transform.position;
+            knifeTarget.transform.position = pos;
+            knifeAnim.SetTrigger("ThrowKnife");
         }
     }
 }

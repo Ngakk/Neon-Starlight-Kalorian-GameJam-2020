@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9301179a6633a4d92a75438fd366ef, type: 3}
   m_Name: Huevos Especiales
   m_EditorClassIdentifier: 
-  recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  recipeSpr: {fileID: 21300000, guid: 081e5a651902d344face4d50df19a284, type: 3}
   recipeName: Huevos Especiales
   ingredients:
   - {fileID: 11400000, guid: bb09826af0259fd40be87deddcc606b0, type: 2}
