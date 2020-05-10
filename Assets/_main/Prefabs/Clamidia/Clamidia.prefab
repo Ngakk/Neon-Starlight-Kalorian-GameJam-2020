@@ -1,5 +1,71 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &231645355276442517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2527977746496980014}
+  - component: {fileID: 7550382246278477209}
+  - component: {fileID: 3545902430356986757}
+  m_Layer: 0
+  m_Name: BodyHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2527977746496980014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231645355276442517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8936649570965611545}
+  m_Father: {fileID: 6252311990826699297}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7550382246278477209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231645355276442517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1a5bfc5c34f52438815c48726be8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitData:
+    damage: 10
+    knockback: 10
+    knockbackTime: 1
+    sourcePosition: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+    direction: {x: -0.00000008742278, y: 0, z: -1}
+  isAlly: 0
+--- !u!65 &3545902430356986757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231645355276442517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.834108, y: 1, z: 4.068955}
+  m_Center: {x: -0.6584122, y: 0, z: 1.5288169}
 --- !u!1 &999784629135211732
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +96,50 @@ Transform:
   m_Father: {fileID: 6252311990826699297}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1961379727406441083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8936649570965611545}
+  - component: {fileID: 7866787341562393548}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8936649570965611545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961379727406441083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8, y: 0, z: 2.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2527977746496980014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7866787341562393548
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961379727406441083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6229253, y: 1, z: 1.7481842}
+  m_Center: {x: 0.81146264, y: 0, z: 0.29668427}
 --- !u!1 &2756735216056424988
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +305,7 @@ Transform:
   - {fileID: 6252311990774395165}
   - {fileID: 4750934443136555216}
   - {fileID: 484999722695711545}
+  - {fileID: 2527977746496980014}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -390,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1ee4f00c82b4142b9f13785440b6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitboxHolder: {fileID: 300747658}
+  hitboxHolder: {fileID: 231645355276442517}
   sprite: {fileID: 0}
   startActivated: 1
   lifeTime: 0
