@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc7fa5e65d507024bb8e147abd4cf1b1
+guid: fa53eb857cd0a694a9c70172a90728dd
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_Tronco
-    second: {fileID: 2100000, guid: f086c88d98841974a97eb04c24cd52eb, type: 2}
+      name: MAT_Hojas2
+    second: {fileID: 2100000, guid: 7081351264a0c64419cb9b34153f9623, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Tallo.002
+    second: {fileID: 2100000, guid: 855c31be561c5944ea6ee3302c0a8efb, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -63,7 +68,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
