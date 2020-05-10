@@ -3,7 +3,12 @@ guid: 61234faa994712a4f9ea3edecd620886
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Piedra
+    second: {fileID: 2100000, guid: 9e508d12cf8479045a32bfbcb70525c2, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
