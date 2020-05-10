@@ -12,7 +12,7 @@ public class RecipePage : MonoBehaviour
     public GameObject ingredientsPanel;
     public GameObject ingredientElementPrefab;
 
-    public void SetRecipePage(Sprite _spr, string _name, InventoryItem_SO[] _ingredients)
+    public void SetRecipePage(Sprite _spr, string _name, List<InventoryItem_SO> _ingredients)
     {
         recipeSprite.sprite = _spr;
         recipeName.text = _name;
@@ -22,7 +22,7 @@ public class RecipePage : MonoBehaviour
             Destroy(t.gameObject);
         }
 
-        for (int i = 0; i < _ingredients.Length; i++)
+        for (int i = 0; i < _ingredients.Count; i++)
         {
             Debug.Log(ingredientElementPrefab.GetComponent<RecipeIngredientElement>());
 
