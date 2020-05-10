@@ -1,21 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Managers
 {
     public class ManagerUI : MonoBehaviour
     {
-        // Inventory
+        [Header("Navigation")]
+        public GameObject BGPanel;
+        public GameObject FGPanel;
+        public GameObject SettingsPanel;
+
+        [Header("Inventory")]
         public GameObject ingredientsPanel;
         public GameObject ingredientsContainer;
         public GameObject ingredientBtn_pfb;
 
-        // RecipeBook
+        [Header("Recipe")]
         public GameObject recipeBook;
         public RecipePage pageA;
         public RecipePage pageB;
+        public TextMeshProUGUI recipesUnlockedQty;
+        public TextMeshProUGUI recipesTotalQty;
         private int currentPage;
+
+        [Header("Map")]
+        public GameObject knifeTarget;
+        public Animator knifeAnim;
 
         private void Awake()
         {
@@ -60,7 +72,7 @@ namespace Managers
 
         public void NextRecipeBookPage()
         {
-            if (currentPage < ManagerStatic.inventoryManager.recipesLearned.Count/2)
+            if (currentPage < ManagerStatic.inventoryManager.recipesLearned.Count / 2)
             {
                 currentPage++;
                 LoadRecipePages(currentPage);
@@ -80,7 +92,7 @@ namespace Managers
         {
             if (_bool)
             {
-                foreach(Transform t in ingredientsContainer.transform)
+                foreach (Transform t in ingredientsContainer.transform)
                 {
                     Destroy(t.gameObject);
                 }
@@ -99,6 +111,53 @@ namespace Managers
             }
 
             ingredientsPanel.SetActive(_bool);
+        }
+
+        public void ChangeMenuPanel(GameObject _panel)
+        {
+            foreach (Transform t in BGPanel.transform)
+            {
+                t.gameObject.SetActive(false);
+            }
+            foreach(Transform t in FGPanel.transform)
+            {
+                t.gameObject.SetActive(false);
+            }
+
+            _panel.SetActive(true);
+        }
+
+        public void AddMenuPanel(GameObject _panel)
+        {
+            _panel.SetActive(true);
+        }
+
+        public void RemoveMenuPanel(GameObject _panel)
+        {
+            _panel.SetActive(false);
+        }
+
+        public void ChangeSubmenuPanel(GameObject _panel)
+        {
+            foreach(Transform t in SettingsPanel.transform)
+            {
+                t.gameObject.SetActive(false);
+            }
+
+            _panel.SetActive(true);
+        }
+
+        public void UpdateRecipesUnlock()
+        {
+            recipesUnlockedQty.text = ManagerStatic.inventoryManager.recipesLearned.Count.ToString();
+            recipesTotalQty.text = ManagerStatic.recipesManager.allRecipes.Count.ToString();
+        }
+
+        public void RepositionMapKnife(GameObject _go)
+        {
+            Vector3 pos = _go.transform.position;
+            knifeTarget.transform.position = pos;
+            knifeAnim.SetTrigger("ThrowKnife");
         }
     }
 }

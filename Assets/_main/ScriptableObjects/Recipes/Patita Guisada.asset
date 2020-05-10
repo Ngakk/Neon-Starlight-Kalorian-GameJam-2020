@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Patita Guisada
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Patita Guisada
+  recipeName: Stewed Leg
   ingredients:
   - {fileID: 11400000, guid: dedc83a5e124aa44587affc3ef858b0e, type: 2}
   - {fileID: 11400000, guid: 9388c027b5848f24a8137a1507777d02, type: 2}

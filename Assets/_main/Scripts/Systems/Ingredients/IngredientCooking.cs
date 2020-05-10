@@ -6,6 +6,7 @@ using Managers;
 public class IngredientCooking : MonoBehaviour
 {
     public List<InventoryItem_SO> chosenIngredients = new List<InventoryItem_SO>();
+    public RecipeInfo recipeInfo;
 
     public bool SelectIngredient(InventoryItem_SO _ingredient)
     {
@@ -62,15 +63,28 @@ public class IngredientCooking : MonoBehaviour
 
         if (validRecipe)
         {
+            Recipe_SO recipe = ManagerStatic.recipesManager.allRecipes[recipeIndex];
+
             for (int i = 0; i < chosenIngredients.Count; i++)
             {
                 ManagerStatic.inventoryManager.UseIngredient(chosenIngredients[i]);
             }
 
-            ManagerStatic.inventoryManager.LearnRecipe(ManagerStatic.recipesManager.allRecipes[recipeIndex]);
+            ManagerStatic.inventoryManager.LearnRecipe(recipe);
             ManagerStatic.uiManager.ToggleIngredientsPanel(true);
-            return ManagerStatic.recipesManager.allRecipes[recipeIndex];
-        } else
+            recipeInfo.SetRecipeInfo(recipe.recipeSpr, recipe.recipeName, "no descriptions yet");
+            chosenIngredients.Clear();
+            return recipe;
+        }
+        else
+        {
+            recipeInfo.ClearInfo();
             return null;
+        }
+    }
+
+    public void ClearChosenIngredients()
+    {
+        chosenIngredients.Clear();
     }
 }

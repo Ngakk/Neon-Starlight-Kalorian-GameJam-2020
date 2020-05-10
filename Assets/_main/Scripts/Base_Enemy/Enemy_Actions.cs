@@ -15,7 +15,8 @@ public class Enemy_Actions : MonoBehaviour
     public DropItemChance[] chance;
     public float total;
     public float randomNumber;
-    public Animator anim;
+    public List<GameObject> drops;
+    public Transform pivotLoot;
 
     private void Start() 
     {
@@ -25,29 +26,32 @@ public class Enemy_Actions : MonoBehaviour
         }
     }
 
-    public void Attack()
+    public void DropLoot()
     {
-        anim.SetTrigger("MakeDamage");
-    }
-
-    public GameObject DropLoot()
-    {
-        randomNumber = UnityEngine.Random.Range(0, total);
-        foreach(var x in chance)
+        int drop = UnityEngine.Random.Range(2, 4);
+        drops = new List<GameObject>();
+        for(int i = 0; i < drop; i++)
         {
-            if(randomNumber <= x.percentage)
+            randomNumber = UnityEngine.Random.Range(0, total);
+            foreach(var x in chance)
             {
-                Debug.Log("Loot de esto: " +  x.objectToSpawn.name);
-                Vector3 spawn = gameObject.transform.position;
-                spawn += new Vector3 (0.0f, 0.0f, 0.1f);
-                Instantiate(x.objectToSpawn, spawn, Quaternion.identity);
-                return x.objectToSpawn;
-            }
-            else
-            {
-                randomNumber -= x.percentage;
+                if(randomNumber <= x.percentage)
+                {
+                    Debug.Log("Loot de esto: " +  x.objectToSpawn.name);
+                    drops.Add(x.objectToSpawn);
+                }
+                else
+                {
+                    randomNumber -= x.percentage;
+                }
             }
         }
-        return null;
+        Vector3 startCoodenate = pivotLoot.transform.position;
+        startCoodenate.x = 1f * drop - 0.5f;
+        for(int i = 0; i < drop; i++)
+        {
+            GameObject go = Instantiate(drops[i], startCoodenate - new Vector3(2f * i, 0.0f, 0.0f), Quaternion.identity); 
+            go.transform.SetParent(pivotLoot);
+        }
     }
 }
