@@ -137,6 +137,11 @@ namespace Managers
             _panel.SetActive(false);
         }
 
+        public void ToggleMenuPanel(GameObject _panel)
+        {
+            _panel.SetActive(!_panel.activeSelf);
+        }
+
         public void ChangeSubmenuPanel(GameObject _panel)
         {
             foreach(Transform t in SettingsPanel.transform)
