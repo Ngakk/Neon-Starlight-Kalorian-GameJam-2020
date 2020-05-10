@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -218,6 +218,12 @@ PrefabInstance:
       propertyPath: acidCoil
       value: 
       objectReference: {fileID: 1466305936}
+    - target: {fileID: 6252311990826699302, guid: 3f16f90b8b6db9e46bca421ddd4f25da,
+        type: 3}
+      propertyPath: chance.Array.data[0].objectToSpawn
+      value: 
+      objectReference: {fileID: 8476320678816524043, guid: 3fb77469ed81f564b83994ce9c0a72b7,
+        type: 3}
     - target: {fileID: 6252311990826699307, guid: 3f16f90b8b6db9e46bca421ddd4f25da,
         type: 3}
       propertyPath: m_Name
