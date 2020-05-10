@@ -8,6 +8,7 @@ public delegate void HurtboxEvent(HitData _hitData);
 public class Hurtbox : MonoBehaviour
 {
     public Transform hurtboxParent;
+    public bool isAlly;
     private Collider[] colliders;
 
     public HurtboxEvent onHurt;
@@ -18,7 +19,10 @@ public class Hurtbox : MonoBehaviour
         foreach (var c in colliders)
         {
             c.isTrigger = false;
-            c.gameObject.layer = 8;
+            if (isAlly)
+                c.gameObject.layer = 10;
+            else
+                c.gameObject.layer = 8;
 
             var part = c.GetComponent<HurtboxMessenger>();
             if (part == null)

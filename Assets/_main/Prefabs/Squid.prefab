@@ -197,10 +197,10 @@ MonoBehaviour:
   hurtbox: {fileID: 1563727096460056721}
   enemyActions: {fileID: 1563727096460056720}
   animator: {fileID: 1563727096460056723}
-  idle: {fileID: 0}
-  attack: {fileID: 0}
-  hurt: {fileID: 0}
-  die: {fileID: 0}
+  idle: {fileID: 11400000, guid: aad8c9a5bf3a1d046818185130adaa4a, type: 2}
+  attack: {fileID: 11400000, guid: 52d74bcbb17731c42935fe2f4c07d99c, type: 2}
+  hurt: {fileID: 11400000, guid: 33601bdeeab46154c9fc49fb630c3975, type: 2}
+  die: {fileID: 11400000, guid: 295b7166935ae1443a95359003d9e7a0, type: 2}
   onAttackUEvent:
     m_PersistentCalls:
       m_Calls: []

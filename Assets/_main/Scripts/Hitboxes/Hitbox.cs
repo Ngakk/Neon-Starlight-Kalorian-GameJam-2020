@@ -6,6 +6,7 @@ public class Hitbox : MonoBehaviour
 {
     [Header("Settings")]
     public HitData hitData;
+    public bool isAlly;
 
     private Collider[] colliders;
     private List<Collider> hurtboxes = new List<Collider>();
@@ -13,10 +14,14 @@ public class Hitbox : MonoBehaviour
     private void Start()
     {
         colliders = GetComponentsInChildren<Collider>();
+
         foreach (var c in colliders)
         {
             c.isTrigger = true;
-            c.gameObject.layer = 8;
+            if (isAlly)
+                c.gameObject.layer = 8;
+            else
+                c.gameObject.layer = 10;
         }
     }
 
