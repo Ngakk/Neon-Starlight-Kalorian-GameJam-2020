@@ -7,7 +7,7 @@ public class Babaosa_Die : EnemyState
 {
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
-        _behaviour.animator.SetTrigger("isDead");
+        _behaviour.animator.SetTrigger("IsDead");
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)

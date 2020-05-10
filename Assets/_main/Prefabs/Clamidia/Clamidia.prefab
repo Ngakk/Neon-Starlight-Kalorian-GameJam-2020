@@ -68,13 +68,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6252311990774395164}
-  m_LocalRotation: {x: -0, y: 0.8660254, z: 0.5, w: 0}
+  m_LocalRotation: {x: -0.000000084462314, y: -0.953717, z: -0.30070576, w: 0.0000002678803}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 6252311990826699297}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -60, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -35, y: -179.99998, z: 0}
 --- !u!212 &6252311990774395166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -137,11 +137,11 @@ GameObject:
   - component: {fileID: 6252311990826699297}
   - component: {fileID: 6252311990826699302}
   - component: {fileID: 6252311990826699301}
-  - component: {fileID: 6252311990826699300}
   - component: {fileID: 2064210733}
   - component: {fileID: 2064210730}
   - component: {fileID: 2064210731}
   - component: {fileID: 2064210732}
+  - component: {fileID: 2570536089661744828}
   m_Layer: 0
   m_Name: Clamidia
   m_TagString: Untagged
@@ -206,21 +206,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6252311990826699300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6252311990826699307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd35e6f10789c94e8e7e75d91f83f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Life: 100
-  player: {fileID: 0}
-  acidCoil: {fileID: 0}
 --- !u!54 &2064210733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -261,7 +246,18 @@ MonoBehaviour:
   die: {fileID: 11400000, guid: 5faa53222bd7a754194d38823268becd, type: 2}
   onAttackUEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SpawnAcid
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onHurtUEvent:
     m_PersistentCalls:
       m_Calls:
@@ -308,3 +304,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtboxParent: {fileID: 4750934443136555216}
+  isAlly: 0
+--- !u!210 &2570536089661744828
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252311990826699307}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

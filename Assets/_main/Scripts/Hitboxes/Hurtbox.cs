@@ -9,13 +9,18 @@ public class Hurtbox : MonoBehaviour
 {
     public Transform hurtboxParent;
     public bool isAlly;
+    public float invulnerableTime = 1f;
+    public bool isInvulnerable;
+
     private Collider[] colliders;
+    private float lastHitTime;
 
     public HurtboxEvent onHurt;
 
     private void Start()
     {
         colliders = hurtboxParent.GetComponentsInChildren<Collider>();
+        lastHitTime = -1;
         foreach (var c in colliders)
         {
             c.isTrigger = false;
@@ -34,7 +39,11 @@ public class Hurtbox : MonoBehaviour
 
     public void OnHit(HitData _hitData)
     {
-        Debug.Log("Hurtbox onHit", gameObject);
-        onHurt?.Invoke(_hitData);
+        if (Time.time > lastHitTime + invulnerableTime)
+        {
+            lastHitTime = Time.time;
+            Debug.Log("Hurtbox onHit", gameObject);
+            onHurt?.Invoke(_hitData);
+        }
     }
 }

@@ -19,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
     public UnityEvent onAttackUEvent, onHurtUEvent, onDieUEvent;
     public EnemyBehaviourHurtEvent onHurt;
 
-    private EnemyState currentState;
+    [SerializeField] private EnemyState currentState;
 
     private void OnEnable()
     {
