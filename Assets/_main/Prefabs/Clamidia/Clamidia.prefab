@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2756735216056424988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0.49}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.67, y: 0.57, z: 1.64}
+  m_LocalScale: {x: 0.7619942, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6252311990826699297}
   m_RootOrder: 1
@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 2064210731}
   - component: {fileID: 2064210732}
   - component: {fileID: 2570536089661744828}
+  - component: {fileID: 2662688501975416290}
   m_Layer: 0
   m_Name: Clamidia
   m_TagString: Untagged
@@ -253,7 +254,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -272,9 +273,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Spit
+          m_BoolArgument: 0
+        m_CallState: 2
   onDieUEvent:
     m_PersistentCalls:
       m_Calls: []
+  currentState: {fileID: 0}
 --- !u!114 &2064210731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtbox: {fileID: 2064210732}
   onDied: {fileID: 11400000, guid: c8fa03a8c7bc1f340a81bef2f26093db, type: 2}
-  maxHealth: 5000
+  maxHealth: 150
   currentHealth: 0
 --- !u!114 &2064210732
 MonoBehaviour:
@@ -305,6 +318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtboxParent: {fileID: 4750934443136555216}
   isAlly: 0
+  invulnerableTime: 1
+  isInvulnerable: 0
 --- !u!210 &2570536089661744828
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -315,4 +330,16 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
+--- !u!114 &2662688501975416290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252311990826699307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ff6ba7cda613040875d6462f3e690e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
