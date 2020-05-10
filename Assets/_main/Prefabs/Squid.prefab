@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &344133705396757389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051806024695377629}
+  m_Layer: 0
+  m_Name: Pivot Loot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051806024695377629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344133705396757389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1563727096460056727}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563727096407548842
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563727096407548842}
   m_LocalRotation: {x: -0, y: 0.8660254, z: 0.5, w: 0}
-  m_LocalPosition: {x: 0, y: 0.78, z: -5.21}
+  m_LocalPosition: {x: 0, y: 0, z: -5.21}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 1563727096460056727}
@@ -119,6 +149,7 @@ Transform:
   - {fileID: 1563727096407548843}
   - {fileID: 1563727096681330664}
   - {fileID: 1574564676938263061}
+  - {fileID: 1051806024695377629}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -135,15 +166,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chance:
-  - objectToSpawn: {fileID: 0}
+  - objectToSpawn: {fileID: 2617129217110977929, guid: b2e3744464157a84e8758d94f9bb8b32,
+      type: 3}
     percentage: 60
-  - objectToSpawn: {fileID: 0}
+  - objectToSpawn: {fileID: 2617129217110977929, guid: 3ff5944d750a6c146a1bcd0c0576237c,
+      type: 3}
     percentage: 90
-  - objectToSpawn: {fileID: 0}
+  - objectToSpawn: {fileID: 2617129217110977929, guid: f9c35919204882d4aad9af4e3f4fb995,
+      type: 3}
     percentage: 10
   total: 0
   randomNumber: 0
-  anim: {fileID: 1563727096460056723}
+  drops: []
+  pivotLoot: {fileID: 1051806024695377629}
 --- !u!95 &1563727096460056723
 Animator:
   serializedVersion: 3
@@ -210,6 +245,7 @@ MonoBehaviour:
   onDieUEvent:
     m_PersistentCalls:
       m_Calls: []
+  currentState: {fileID: 0}
 --- !u!114 &1563727096460056724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtbox: {fileID: 1563727096460056721}
   onDied: {fileID: 11400000, guid: c8fa03a8c7bc1f340a81bef2f26093db, type: 2}
-  maxHealth: 50
+  maxHealth: 100
   currentHealth: 0
 --- !u!54 &1563727096460056726
 Rigidbody:
@@ -255,6 +291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtboxParent: {fileID: 1574564676938263061}
+  isAlly: 0
+  invulnerableTime: 1
+  isInvulnerable: 0
 --- !u!1 &1563727096681330667
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563727096681330667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.95, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1563727096460056727}
@@ -373,7 +412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8343174868728397741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0.78, z: -3.3}
+  m_LocalPosition: {x: 0.26, y: 0.5, z: -4.3}
   m_LocalScale: {x: 6.3991, y: 1.4677, z: 1.9466}
   m_Children: []
   m_Father: {fileID: 1563727096460056727}

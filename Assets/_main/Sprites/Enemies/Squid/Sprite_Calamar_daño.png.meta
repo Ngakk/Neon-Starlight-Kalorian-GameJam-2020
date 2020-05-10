@@ -129,10 +129,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_0"
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1019
-        width: 356
-        height: 387
+        x: 6
+        y: 1020
+        width: 354
+        height: 386
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_1"
       rect:
         serializedVersion: 2
-        x: 451
-        y: 1020
-        width: 349
-        height: 380
+        x: 450
+        y: 1021
+        width: 348
+        height: 379
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,9 +171,9 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_2"
       rect:
         serializedVersion: 2
-        x: 875
+        x: 877
         y: 1034
-        width: 362
+        width: 359
         height: 372
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -194,7 +194,7 @@ TextureImporter:
         serializedVersion: 2
         x: 9
         y: 611
-        width: 361
+        width: 360
         height: 372
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_4"
       rect:
         serializedVersion: 2
-        x: 489
+        x: 490
         y: 617
-        width: 358
+        width: 356
         height: 381
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_5"
       rect:
         serializedVersion: 2
-        x: 906
-        y: 611
-        width: 363
-        height: 372
+        x: 907
+        y: 612
+        width: 359
+        height: 371
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_6"
       rect:
         serializedVersion: 2
-        x: 20
-        y: 53
-        width: 351
-        height: 380
+        x: 21
+        y: 54
+        width: 348
+        height: 379
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_7"
       rect:
         serializedVersion: 2
-        x: 496
-        y: 61
-        width: 356
-        height: 387
+        x: 497
+        y: 62
+        width: 354
+        height: 386
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: "Sprite_Calamar_da\xF1o_8"
       rect:
         serializedVersion: 2
-        x: 928
-        y: 53
-        width: 390
-        height: 387
+        x: 929
+        y: 54
+        width: 354
+        height: 386
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
