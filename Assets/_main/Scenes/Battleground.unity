@@ -464,6 +464,51 @@ PrefabInstance:
       objectReference: {fileID: 1563794779}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b199fbbfca08c7148a59119b65d45cbd, type: 3}
+--- !u!1 &542724163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542724164}
+  - component: {fileID: 542724167}
+  m_Layer: 0
+  m_Name: MasterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542724164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542724163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542724167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542724163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12ad985e01f3f040b1fb5e9acda3263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPrefab: {fileID: 5648573535554482511, guid: 8aed862d807794f4985477a50cc11357,
+    type: 3}
 --- !u!1 &589722624
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +545,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8519935299792263394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &636919119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 636919116, guid: ccd3c9546cb7acf4b942da47412485e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8519935299792263394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636919113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47062ee0d75e7894dacb796e594a7e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &636919124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8519935299174483368, guid: ccd3c9546cb7acf4b942da47412485e3,
@@ -1289,6 +1346,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 636919114, guid: ccd3c9546cb7acf4b942da47412485e3, type: 3}
+      propertyPath: hurtbox
+      value: 
+      objectReference: {fileID: 636919119}
     - target: {fileID: 8519935299174483368, guid: ccd3c9546cb7acf4b942da47412485e3,
         type: 3}
       propertyPath: m_LocalPosition.x
