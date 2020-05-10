@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9301179a6633a4d92a75438fd366ef, type: 3}
   m_Name: Coctel Mimisquio
   m_EditorClassIdentifier: 
-  recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
+  recipeSpr: {fileID: 21300000, guid: 794373b8222e6bf4883a94ef6b3184c3, type: 3}
   recipeName: Coctel Mimisquio
   ingredients:
   - {fileID: 11400000, guid: 26cb80905f96e254680c67f255734f8d, type: 2}

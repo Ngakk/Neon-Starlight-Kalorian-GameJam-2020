@@ -90,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6941069112953598375}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6941069113580466464}
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6511804867516398718, guid: d4307996022ce9944bf1a91d650340a4,
+  m_Sprite: {fileID: 7297772699682697899, guid: d4307996022ce9944bf1a91d650340a4,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 6941069113580466467}
   - component: {fileID: 6941069113580466466}
   - component: {fileID: 799382331886870889}
+  - component: {fileID: 2553002528497920243}
   m_Layer: 0
   m_Name: AcidDropDebris
   m_TagString: Untagged
@@ -227,3 +228,21 @@ MonoBehaviour:
   debris: {fileID: 0}
   lifeTime: 10
   destroyOnCollide: 0
+--- !u!114 &2553002528497920243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941069113580466477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e289f40a0099ba4bbad7dd9d62dcd1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 6941069112953598373}
+  options:
+  - {fileID: -3710200242354221507, guid: 11f6516d2d742184bb9cb53020e88416, type: 3}
+  - {fileID: -4242557162444345552, guid: 11f6516d2d742184bb9cb53020e88416, type: 3}
+  - {fileID: 8460078951625927716, guid: 11f6516d2d742184bb9cb53020e88416, type: 3}
+  - {fileID: 4852176159969279509, guid: 11f6516d2d742184bb9cb53020e88416, type: 3}

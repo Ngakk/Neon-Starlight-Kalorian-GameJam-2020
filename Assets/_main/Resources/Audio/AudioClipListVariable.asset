@@ -29,7 +29,7 @@ MonoBehaviour:
   - name: Fight Music
     clips:
     - {fileID: 8300000, guid: 8e8d80a2cf88b0e42a2a81a8e8d904f5, type: 3}
-  - name: CharacterSFX
+  - name: CharacterHurt_SFX
     clips:
     - {fileID: 8300000, guid: b49e4cfbe4662b744a3bb7fd722edd92, type: 3}
     - {fileID: 8300000, guid: a9fc303b64fcd554e84cf63c2dbd02b6, type: 3}
@@ -41,3 +41,15 @@ MonoBehaviour:
     - {fileID: 8300000, guid: ed4437d0b486e4c4483eb394c9393008, type: 3}
     - {fileID: 8300000, guid: e56afdc4a0db4bf4cabafc00390a3424, type: 3}
     - {fileID: 8300000, guid: 9616a91b1f760174bbaed8b90164be45, type: 3}
+    - {fileID: 8300000, guid: 4c27544c58951bb429f21482beca10ac, type: 3}
+  - name: Character_SFX
+    clips:
+    - {fileID: 8300000, guid: a9471c92bc3930e4a9a250ae8a9b1214, type: 3}
+    - {fileID: 8300000, guid: 21ea3ecdd75794041ae8c17d30b77357, type: 3}
+    - {fileID: 8300000, guid: c59544be27578e947935c0d4446107c1, type: 3}
+    - {fileID: 8300000, guid: bcf0fe2b64ca4c54a9333278181b5b79, type: 3}
+  - name: ClamIdia_SFX
+    clips:
+    - {fileID: 8300000, guid: 117f77cc58eadab419ec7ab597b04079, type: 3}
+    - {fileID: 8300000, guid: 9e2a45290379e644cb4d94d68e78af42, type: 3}
+    - {fileID: 8300000, guid: d9b8fd999a510f44a9dbc3cd597120a4, type: 3}
