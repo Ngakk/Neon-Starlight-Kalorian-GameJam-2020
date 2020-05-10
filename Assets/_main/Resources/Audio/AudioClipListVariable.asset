@@ -13,8 +13,42 @@ MonoBehaviour:
   m_Name: AudioClipListVariable
   m_EditorClassIdentifier: 
   clipGroups:
-  - name: Test
+  - name: UI_Click
     clips:
-    - {fileID: 8300000, guid: d198802a4886fdc4f818aded6f5edd65, type: 3}
-    - {fileID: 8300000, guid: 99b7bd23d93fe9b4db4b54f2f653f011, type: 3}
-    - {fileID: 8300000, guid: 8b4da8525a64d0c4db7c3d7e31179d64, type: 3}
+    - {fileID: 8300000, guid: 8074d85ade6f84b4ca3f56fa08138e23, type: 3}
+  - name: BackgroundMusic
+    clips:
+    - {fileID: 8300000, guid: 7013c01d6a625da46925fdf610618658, type: 3}
+  - name: Walk
+    clips:
+    - {fileID: 8300000, guid: b2489980e282ca4459feab30e9d4b613, type: 3}
+    - {fileID: 8300000, guid: 607d734a8f29af244b53e3ecab227b3d, type: 3}
+    - {fileID: 8300000, guid: 07521369c6bb57b4fa8348c24aff4bc5, type: 3}
+    - {fileID: 8300000, guid: 2941d53869dd5e2419296dfdcb348597, type: 3}
+    - {fileID: 8300000, guid: 000710a560cac7f42a497337882a757f, type: 3}
+  - name: Fight Music
+    clips:
+    - {fileID: 8300000, guid: 8e8d80a2cf88b0e42a2a81a8e8d904f5, type: 3}
+  - name: CharacterHurt_SFX
+    clips:
+    - {fileID: 8300000, guid: b49e4cfbe4662b744a3bb7fd722edd92, type: 3}
+    - {fileID: 8300000, guid: a9fc303b64fcd554e84cf63c2dbd02b6, type: 3}
+    - {fileID: 8300000, guid: c7b6045eb182c5c4383e9a047b700a4d, type: 3}
+    - {fileID: 8300000, guid: 9929dd44f0993f045874c5de8f6f0ea3, type: 3}
+    - {fileID: 8300000, guid: 9637f76963a417d42afc6232095ac4fd, type: 3}
+    - {fileID: 8300000, guid: 9acf87ea5fad9be44b6da99124d08f19, type: 3}
+    - {fileID: 8300000, guid: 75b7f746b48af1345886245af09837ba, type: 3}
+    - {fileID: 8300000, guid: ed4437d0b486e4c4483eb394c9393008, type: 3}
+    - {fileID: 8300000, guid: e56afdc4a0db4bf4cabafc00390a3424, type: 3}
+    - {fileID: 8300000, guid: 9616a91b1f760174bbaed8b90164be45, type: 3}
+    - {fileID: 8300000, guid: 4c27544c58951bb429f21482beca10ac, type: 3}
+  - name: Character_SFX
+    clips:
+    - {fileID: 8300000, guid: a9471c92bc3930e4a9a250ae8a9b1214, type: 3}
+    - {fileID: 8300000, guid: 21ea3ecdd75794041ae8c17d30b77357, type: 3}
+    - {fileID: 8300000, guid: c59544be27578e947935c0d4446107c1, type: 3}
+    - {fileID: 8300000, guid: bcf0fe2b64ca4c54a9333278181b5b79, type: 3}
+  - name: ClamIdia_SFX
+    clips:
+    - {fileID: 8300000, guid: 117f77cc58eadab419ec7ab597b04079, type: 3}
+    - {fileID: 8300000, guid: 9e2a45290379e644cb4d94d68e78af42, type: 3}
