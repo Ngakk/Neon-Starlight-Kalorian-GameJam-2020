@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cola Pimentada
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Cola Pimentada
+  recipeName: Peppered Tail
   ingredients:
   - {fileID: 11400000, guid: e0b7786222579d644a8431a0f3faf90c, type: 2}
   - {fileID: 11400000, guid: 39fd3b6e09d4cbb45aa43f2dbd01c59d, type: 2}

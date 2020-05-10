@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lengua a la Careta
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Lengua a la Careta
+  recipeName: Tongue a la Mask
   ingredients:
   - {fileID: 11400000, guid: 809cc17cd23f88644b6cf00bcc746aad, type: 2}
   - {fileID: 11400000, guid: 686f8573b5424554caae8055a912fb7e, type: 2}

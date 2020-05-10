@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Aleta de Calamar
   m_EditorClassIdentifier: 
   ingredientSpr: {fileID: 21300000, guid: a45047f19479e6449ae50a830c5b918f, type: 3}
-  ingredientName: Aleta de Calamar
+  ingredientName: Squid Fin
