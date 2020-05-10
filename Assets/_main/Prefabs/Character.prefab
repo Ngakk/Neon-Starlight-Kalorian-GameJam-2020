@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 2128168901272209347}
   - component: {fileID: 2371568314932682876}
   - component: {fileID: 636919115}
+  - component: {fileID: 1992274741958962048}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -180,6 +181,7 @@ MonoBehaviour:
   hurtbox: {fileID: 636919116}
   onDied: {fileID: 11400000, guid: cb1f64a00d19b134b941e6302a8560ce, type: 2}
   maxHealth: 100
+  currentHealth: 0
 --- !u!114 &636919116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtboxParent: {fileID: 3805264393195469957}
+  isAlly: 1
 --- !u!114 &2128168901272209347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +261,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 1, z: 2.06}
   m_Center: {x: 0, y: 0.54, z: 0}
+--- !u!210 &1992274741958962048
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519935299174483371}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
 --- !u!1 &8519935299931776486
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,3 +469,4 @@ MonoBehaviour:
     sourcePosition: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     direction: {x: 0.00000008742278, y: 0, z: 1}
+  isAlly: 1

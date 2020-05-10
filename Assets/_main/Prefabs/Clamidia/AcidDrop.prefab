@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 1637432452970024227}
   - component: {fileID: 1637432452970024224}
   - component: {fileID: 1637432452970024229}
-  - component: {fileID: 1637432452970024226}
   - component: {fileID: -7572702197298315091}
-  - component: {fileID: 987751208155657371}
-  m_Layer: 10
+  - component: {fileID: 5333334164925212094}
+  m_Layer: 11
   m_Name: AcidDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 4.448, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7085144689614182537}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
@@ -100,21 +100,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 2
---- !u!65 &1637432452970024226
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637432452970024225}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.8, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0.645, z: 0}
 --- !u!114 &-7572702197298315091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,13 +114,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d5824f4a8350a4ab75ceab2b00d7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &987751208155657371
-MonoBehaviour:
+  debris: {fileID: 6941069113580466477, guid: ad020739d8b21fb48bac98372a5d8e94, type: 3}
+  lifeTime: 10
+  destroyOnCollide: 1
+--- !u!65 &5333334164925212094
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637432452970024225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 1.29, z: 0.2}
+  m_Center: {x: 0, y: 0.645, z: 0}
+--- !u!1 &6721892985795091764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7085144689614182537}
+  - component: {fileID: 7590076202078258205}
+  - component: {fileID: 8237727616299858565}
+  m_Layer: 11
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7085144689614182537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721892985795091764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1637432452970024227}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7590076202078258205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721892985795091764}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1a5bfc5c34f52438815c48726be8c3, type: 3}
@@ -146,3 +181,17 @@ MonoBehaviour:
     sourcePosition: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
     direction: {x: -0.00000008742278, y: 0, z: -1}
+  isAlly: 0
+--- !u!65 &8237727616299858565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6721892985795091764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0.645, z: 0}
