@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Managers
 {
     [System.Serializable]
-    public struct InventoryItem
+    public class InventoryItem
     {
         public InventoryItem_SO stats;
         public int qty;
@@ -26,5 +26,6 @@ namespace Managers
         public static ManagerInventory inventoryManager;
         public static ManagerUI uiManager;
         public static ManagerAudio audioManager;
+        public static ManagerRecipes recipesManager;
     }
 }

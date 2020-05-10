@@ -8,6 +8,8 @@ namespace Managers {
         public List<InventoryItem> ingredients = new List<InventoryItem>();
         public List<Recipe_SO> recipesLearned = new List<Recipe_SO>();
 
+        public IngredientCooking cooker;
+
         private void Awake()
         {
             ManagerStatic.inventoryManager = this;
@@ -66,7 +68,7 @@ namespace Managers {
                 }
             } else
             {
-                Debug.LogError(_invItem + " does not exists in the inventory");
+                Debug.Log(_invItem + " does not exists in the inventory");
             }
                 
         }

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 20664246}
   - component: {fileID: 20664248}
   - component: {fileID: 20664247}
+  - component: {fileID: 20664249}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -169,6 +170,9 @@ MonoBehaviour:
   ingredientsContainer: {fileID: 154259860}
   ingredientBtn_pfb: {fileID: 6504059083110397339, guid: 35573d86baed9da468946578e7cf2fe6,
     type: 3}
+  recipeBook: {fileID: 0}
+  pageA: {fileID: 0}
+  pageB: {fileID: 0}
 --- !u!114 &20664248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,16 +186,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredients:
-  - stats: {fileID: 11400000, guid: ea2b577a253d3194198ed229d435c9e7, type: 2}
-    qty: 9
-  - stats: {fileID: 11400000, guid: 0ccb3faf5ea4d3549a3eec27211678dd, type: 2}
-    qty: 15
-  - stats: {fileID: 11400000, guid: 26cb80905f96e254680c67f255734f8d, type: 2}
-    qty: 99
   - stats: {fileID: 11400000, guid: bb09826af0259fd40be87deddcc606b0, type: 2}
     qty: 5
   - stats: {fileID: 11400000, guid: e0b7786222579d644a8431a0f3faf90c, type: 2}
+    qty: 10
+  - stats: {fileID: 11400000, guid: 0447920f3e7188841a9d9e40e42d33c3, type: 2}
+    qty: 15
+  - stats: {fileID: 11400000, guid: dedc83a5e124aa44587affc3ef858b0e, type: 2}
+    qty: 99
+  - stats: {fileID: 11400000, guid: 9388c027b5848f24a8137a1507777d02, type: 2}
     qty: 2
+  recipesLearned: []
+  cooker: {fileID: 646343620}
+--- !u!114 &20664249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20664245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5111fcdcfc1d8a44fbf88d3270a49f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRecipes:
+  - {fileID: 11400000, guid: 4094361d210643345b928a52edc0d340, type: 2}
+  - {fileID: 11400000, guid: f58460ee851145c469129462f340e28e, type: 2}
+  - {fileID: 11400000, guid: d4f8c2d4850668e4695b756d948e0695, type: 2}
+  - {fileID: 11400000, guid: 22ea54798b3687347bfaf6a42c0592dc, type: 2}
+  - {fileID: 11400000, guid: 1abef60d0fa13fa46a147128fa9bc348, type: 2}
+  - {fileID: 11400000, guid: 99e3d126f6f917c4f9582639eba5982f, type: 2}
+  - {fileID: 11400000, guid: d2424a001d5c8bc48a459cac2abc00fe, type: 2}
+  - {fileID: 11400000, guid: 0a1183c130db0d5468045b3ed649a0a3, type: 2}
+  - {fileID: 11400000, guid: 4325eaf699ce6fe489c28c60c3fc7d24, type: 2}
+  - {fileID: 11400000, guid: d575ab14611627c44a1822abe7cd52fb, type: 2}
+  - {fileID: 11400000, guid: 64a50fda43464a241aa67321c43e886e, type: 2}
+  - {fileID: 11400000, guid: c6070213442cf46438bdf07de690f184, type: 2}
+  - {fileID: 11400000, guid: 73c465cd30a03414c9f6c5512d9853ec, type: 2}
+  - {fileID: 11400000, guid: d0c1abf7f8eb9a14c93536e7e68fed50, type: 2}
+  - {fileID: 11400000, guid: 905c2499c51c5684bb9d81a06870d6c6, type: 2}
+  - {fileID: 11400000, guid: 620d6e2bd2aeca14d9fd889b600f8b3a, type: 2}
+  - {fileID: 11400000, guid: b69e4c297afa1e8469eb1969d60e7e6c, type: 2}
+  - {fileID: 11400000, guid: 09a122bf102488b4a9c4b4a5d1d0302d, type: 2}
+  - {fileID: 11400000, guid: 9aed3b852251fa24d8c77510a1e12392, type: 2}
+  - {fileID: 11400000, guid: 1a825b504c11d354992ac94e7a6f2059, type: 2}
+  - {fileID: 11400000, guid: 71562c636d144e64abb6383d4cc3cd90, type: 2}
+  - {fileID: 11400000, guid: c672e8fb924b3974cb2d8e2c1a650349, type: 2}
+  - {fileID: 11400000, guid: 4ca6e27219ff80c468fdd6593a872c2c, type: 2}
+  - {fileID: 11400000, guid: da39be190d5ea05418152e3ea059664b, type: 2}
 --- !u!1 &154259860
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +492,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525869129}
   m_CullTransparentMesh: 0
+--- !u!1 &646343618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 646343619}
+  - component: {fileID: 646343620}
+  - component: {fileID: 646343621}
+  m_Layer: 0
+  m_Name: Cooker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &646343619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646343618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646343620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646343618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe980d8888429c45af732609f5a81c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chosenIngredients: []
+--- !u!114 &646343621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646343618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e383bb8292bbfd4ab0053cc504bcfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 646343620}
+        m_MethodName: testCook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  keyCodeToPlay: 99
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
