@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Filete de Pechito en Careta
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Filete de Pechito en Careta
+  recipeName: Masked Breast
   ingredients:
   - {fileID: 11400000, guid: 721c1b05270eb9149ad76c6d3971d135, type: 2}
   - {fileID: 11400000, guid: c0a774488d6968c4abc330cc619f5075, type: 2}

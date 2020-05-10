@@ -17,7 +17,8 @@ namespace Managers {
 
         public void LearnRecipe(Recipe_SO _recipe)
         {
-            recipesLearned.Add(_recipe);
+            if (!recipesLearned.Contains(_recipe))
+                recipesLearned.Add(_recipe);
         }
 
         public void ClearRecipes()

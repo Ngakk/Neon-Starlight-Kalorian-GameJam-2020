@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Baba de Babosa
   m_EditorClassIdentifier: 
   ingredientSpr: {fileID: 21300000, guid: 3fb9b4630d1f04e4caf79d083e2cf3f1, type: 3}
-  ingredientName: Baba de Babosa
+  ingredientName: Slug Drool

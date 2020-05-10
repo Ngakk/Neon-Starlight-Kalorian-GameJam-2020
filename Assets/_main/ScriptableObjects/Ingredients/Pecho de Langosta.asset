@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pecho de Langosta
   m_EditorClassIdentifier: 
   ingredientSpr: {fileID: 21300000, guid: fc6df3ad5a29da9478d31c7686d11525, type: 3}
-  ingredientName: Pecho de Langosta
+  ingredientName: Lobster Breast

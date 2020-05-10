@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Snack de Escama y Lomo
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Snack de Escama y Lomo
+  recipeName: Scale and Loin Snack
   ingredients:
   - {fileID: 11400000, guid: 21af963089d63d24199060ce777b694d, type: 2}
   - {fileID: 11400000, guid: a088aa64d403d10449576c08eba2774f, type: 2}
