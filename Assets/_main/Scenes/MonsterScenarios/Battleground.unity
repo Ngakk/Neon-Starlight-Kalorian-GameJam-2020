@@ -1199,6 +1199,16 @@ PrefabInstance:
       propertyPath: startingSpeed.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 1140424289853337961, guid: 327855bd07c0f7245a352337e0e12a04,
+        type: 3}
+      propertyPath: spawnOffset.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140424289853337961, guid: 327855bd07c0f7245a352337e0e12a04,
+        type: 3}
+      propertyPath: startingSpeed.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1140424289853337974, guid: 327855bd07c0f7245a352337e0e12a04,
         type: 3}
       propertyPath: m_LocalPosition.x
