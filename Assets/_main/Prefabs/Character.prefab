@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454405104726683056}
-  m_LocalRotation: {x: -0.49999967, y: -0, z: -0, w: 0.86602557}
-  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalRotation: {x: -0.00000061094755, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.066, z: 0.613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8519935299174483368}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -60.000004, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2381358437221302459
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.3
   m_Height: 1.3
   m_Direction: 1
   m_Center: {x: 0, y: -0.6, z: 0}
@@ -196,6 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtboxParent: {fileID: 3805264393195469957}
   isAlly: 1
+  invulnerableTime: 1
+  isInvulnerable: 0
 --- !u!114 &2128168901272209347
 MonoBehaviour:
   m_ObjectHideFlags: 0
