@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Managers;
 
 [Serializable]
 public class DropItemChance 
@@ -52,6 +53,7 @@ public class Enemy_Actions : MonoBehaviour
         {
             GameObject go = Instantiate(drops[i], startCoodenate - new Vector3(2f * i, 0.0f, 0.0f), Quaternion.identity); 
             go.transform.SetParent(pivotLoot);
+            ManagerStatic.inventoryManager.AddIngredient(drops[i].GetComponent<Adder_Inventory>().myIyem);
         }
     }
 }
