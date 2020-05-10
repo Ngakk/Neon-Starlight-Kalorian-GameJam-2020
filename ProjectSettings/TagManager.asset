@@ -14,9 +14,9 @@ TagManager:
   - UI
   - 
   - 
-  - HitboxOrHurtbox
-  - 
-  - 
+  - HitboxAllyHurtboxEnemy
+  - UI2
+  - HurtboxAllyHitboxEnemy
   - 
   - 
   - 

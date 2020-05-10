@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: d4307996022ce9944bf1a91d650340a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6030982439389302382
+    second: Babosa_0
+  - first:
+      213: 1566968379593778073
+    second: Babosa_1
+  - first:
+      213: -8292182024230575058
+    second: Babosa_2
+  - first:
+      213: 1583142322691809661
+    second: Babosa_3
+  - first:
+      213: 6941665796560371384
+    second: Babosa_4
+  - first:
+      213: 8360449470995621928
+    second: Babosa_5
+  - first:
+      213: -1673954896463758173
+    second: Acido_0
+  - first:
+      213: -8979096478252320131
+    second: Acido_1
+  - first:
+      213: 1311899238998683431
+    second: Acido_2
+  - first:
+      213: 4796943744910624743
+    second: Acido_3
+  - first:
+      213: 4240580253892680474
+    second: Babosa_0
+  - first:
+      213: -221482836099904742
+    second: Babosa_1
+  - first:
+      213: 2510589060193250910
+    second: Babosa_2
+  - first:
+      213: -8349068850639317555
+    second: Babosa_3
+  - first:
+      213: 4191678576965817050
+    second: Babosa_4
+  - first:
+      213: -8053128787584990237
+    second: Babosa_5
+  - first:
+      213: 7844857051414285393
+    second: Babosa_6
+  - first:
+      213: 6967398324678472423
+    second: Babosa_7
+  - first:
+      213: -2119992397181925793
+    second: Babosa_8
+  - first:
+      213: 6565044373061327421
+    second: Babosa_9
+  - first:
+      213: -6511804867516398718
+    second: Babosa_10
+  - first:
+      213: 7297772699682697899
+    second: Babosa_11
+  - first:
+      213: -3931550370616809953
+    second: Babosa_12
+  - first:
+      213: -9103784116175924980
+    second: Babosa_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Babosa_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 718
+        width: 261
+        height: 298
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b1fcaf54199da30800000000000000
+      internalID: 4240580253892680474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 716
+        width: 261
+        height: 279
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b4b66b8822decf0800000000000000
+      internalID: -221482836099904742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 712
+        width: 261
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eecc5d27767d220800000000000000
+      internalID: 2510589060193250910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 712
+        width: 261
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55d589d16222c80800000000000000
+      internalID: -8349068850639317555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_4
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 712
+        width: 261
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad299a01575db2a30800000000000000
+      internalID: 4191678576965817050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 410
+        width: 261
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e34685f80a8d3090800000000000000
+      internalID: -8053128787584990237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 384
+        width: 261
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c4447ace78edc60800000000000000
+      internalID: 7844857051414285393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_7
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 384
+        width: 260
+        height: 303
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2bc178cdb21b060800000000000000
+      internalID: 6967398324678472423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_8
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 375
+        width: 261
+        height: 302
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56417f95264492e0800000000000000
+      internalID: -2119992397181925793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 183
+        width: 88
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a5ffef219bb1b50800000000000000
+      internalID: 6565044373061327421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 94
+        width: 169
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283860959fb61a5a0800000000000000
+      internalID: -6511804867516398718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_11
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 90
+        width: 157
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba27128ea95e64560800000000000000
+      internalID: 7297772699682697899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Babosa_12
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 69
+        width: 248
+        height: 129
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1664d6a4c35079c0800000000000000
+      internalID: -3931550370616809953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 60f1ce1affeb8344f8a8b931afbdc6f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
