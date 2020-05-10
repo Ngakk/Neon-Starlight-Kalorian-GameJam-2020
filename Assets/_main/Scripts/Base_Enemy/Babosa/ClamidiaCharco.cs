@@ -7,6 +7,7 @@ public class ClamidiaCharco : MonoBehaviour
 {
     public GameObject hitboxHolder;
     public SpriteRenderer sprite;
+    public bool startActivated = false;
 
     public float lifeTime = 5f;
     private float timeToDisable = 0.2f;
@@ -27,15 +28,26 @@ public class ClamidiaCharco : MonoBehaviour
         hitboxHolder.SetActive(true);
         lastBornTime = Time.time;
         activated = true;
-        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
-        sprite.DOColor(new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0), lifeTime+0.25f).SetEase(Ease.InQuad);
+        if (sprite)
+        {
+            sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 1);
+            sprite.DOColor(new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0), lifeTime + 0.25f).SetEase(Ease.InQuad);
+        }
     }
 
     private void Start()
     {
-        activated = false;
-        hitboxHolder.SetActive(false);
-        sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+        if (!startActivated)
+        {
+            activated = false;
+            hitboxHolder.SetActive(false);
+            if (sprite)
+                sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 0);
+        }
+        else
+        {
+            activated = true;
+        }
     }
 
     private void Update()
@@ -52,9 +64,12 @@ public class ClamidiaCharco : MonoBehaviour
             lastEnabledTime += timeToDisable;
         }
 
-        if(Time.time > lastBornTime + lifeTime)
+        if (lifeTime != 0)
         {
-            SelfDestroy();
+            if (Time.time > lastBornTime + lifeTime)
+            {
+                SelfDestroy();
+            }
         }
     }
 
