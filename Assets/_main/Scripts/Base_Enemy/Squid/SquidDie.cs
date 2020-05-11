@@ -8,6 +8,7 @@ public class SquidDie : EnemyState
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
         _behaviour.animator.SetTrigger("IsDead");
+        _behaviour.onDieUEvent?.Invoke();
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)

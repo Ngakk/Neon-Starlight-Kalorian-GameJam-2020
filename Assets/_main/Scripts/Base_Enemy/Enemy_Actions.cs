@@ -49,7 +49,7 @@ public class Enemy_Actions : MonoBehaviour
         }
         Vector3 startCoodenate = pivotLoot.transform.position;
         startCoodenate.x = 1f * drop - 0.5f;
-        for(int i = 0; i < drop; i++)
+        for(int i = 0; i < drops.Count; i++)
         {
             GameObject go = Instantiate(drops[i], startCoodenate - new Vector3(2f * i, 0.0f, 0.0f), Quaternion.identity); 
             go.transform.SetParent(pivotLoot);

@@ -25,6 +25,13 @@ namespace Managers
             ManagerStatic.audioManager = this;
         }
 
+        private void OnLevelWasLoaded(int level)
+        {
+            Debug.Log("OnLevel was loaded");
+            PoolManager.ClearPools();
+            PoolManager.MakePool(audioPrefab.gameObject, 50, 20, true);
+        }
+
         private void Start()
         {
             audioList = Resources.Load<AudioClipListVariable>(AudioClipListVariable.resourcePath);
