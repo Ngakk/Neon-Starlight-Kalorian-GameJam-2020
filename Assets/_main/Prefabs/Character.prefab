@@ -270,7 +270,7 @@ MonoBehaviour:
   hurtbox: {fileID: 636919116}
   onDied: {fileID: 11400000, guid: cb1f64a00d19b134b941e6302a8560ce, type: 2}
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
 --- !u!114 &636919116
 MonoBehaviour:
   m_ObjectHideFlags: 0
