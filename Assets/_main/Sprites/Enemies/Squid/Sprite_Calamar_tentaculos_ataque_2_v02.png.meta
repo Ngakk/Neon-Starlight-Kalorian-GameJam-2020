@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: aeceec876a21b8b4399a80544c06ace5
+guid: c118382fd7ff2d74db23ea49a32be37a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7911249778121623523
-    second: Sprite_Calamar_tentaculos_ataque_2_0
+      213: 8784206799667279437
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_0
   - first:
-      213: 7483111414053696649
-    second: Sprite_Calamar_tentaculos_ataque_2_1
+      213: -5891503776652230816
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_1
   - first:
-      213: -2161715451445636045
-    second: Sprite_Calamar_tentaculos_ataque_2_2
+      213: 2971072496773796768
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_2
   - first:
-      213: -2848577247237726222
-    second: Sprite_Calamar_tentaculos_ataque_2_3
+      213: -3782155993894332837
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_3
   - first:
-      213: -8429912255979032369
-    second: Sprite_Calamar_tentaculos_ataque_2_4
+      213: 2565699772581127243
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_4
   - first:
-      213: 7485011023538055961
-    second: Sprite_Calamar_tentaculos_ataque_2_5
+      213: -5936647971664512545
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_5
   - first:
-      213: 4313975030339572077
-    second: Sprite_Calamar_tentaculos_ataque_2_6
+      213: 647248970599996038
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_6
+  - first:
+      213: 5229447423542164144
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_7
+  - first:
+      213: 6701775167295772214
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_8
+  - first:
+      213: -5720563563199087543
+    second: Sprite_Calamar_tentaculos_ataque_2_v02_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_0
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 786
+        y: 1991
         width: 132
-        height: 233
+        height: 235
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d183cad0e38953290800000000000000
-      internalID: -7911249778121623523
+      spriteID: d463db72b85c7e970800000000000000
+      internalID: 8784206799667279437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_1
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_1
       rect:
         serializedVersion: 2
-        x: 204
-        y: 783
-        width: 185
+        x: 203
+        y: 1989
+        width: 187
         height: 234
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -155,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98477511f2a59d760800000000000000
-      internalID: 7483111414053696649
+      spriteID: 06f75c7978c2d3ea0800000000000000
+      internalID: -5891503776652230816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_2
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_2
       rect:
         serializedVersion: 2
-        x: 440
-        y: 785
-        width: 243
-        height: 167
+        x: 439
+        y: 1991
+        width: 244
+        height: 166
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3341c1b004b0002e0800000000000000
-      internalID: -2161715451445636045
+      spriteID: 0a39224c1be5b3920800000000000000
+      internalID: 2971072496773796768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_3
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_3
       rect:
         serializedVersion: 2
         x: 750
-        y: 769
-        width: 185
-        height: 233
+        y: 1975
+        width: 184
+        height: 234
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff92270612d778d0800000000000000
-      internalID: -2848577247237726222
+      spriteID: b5650da8925138bc0800000000000000
+      internalID: -3782155993894332837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_4
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_4
       rect:
         serializedVersion: 2
         x: 2
-        y: 472
-        width: 185
-        height: 233
+        y: 1677
+        width: 186
+        height: 235
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +227,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc078ae777fe20b80800000000000000
-      internalID: -8429912255979032369
+      spriteID: b44aff879523b9320800000000000000
+      internalID: 2565699772581127243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_5
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 291
+        y: 1381
+        width: 467
+        height: 271
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9b46c9f1acc9da0800000000000000
+      internalID: -5936647971664512545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1137
         width: 469
-        height: 167
+        height: 169
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b6edd5ed910e760800000000000000
-      internalID: 7485011023538055961
+      spriteID: 68a99dd628d7bf800800000000000000
+      internalID: 647248970599996038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Calamar_tentaculos_ataque_2_6
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 870
-        height: 138
+        y: 650
+        width: 523
+        height: 407
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +290,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d619b450f615edb30800000000000000
-      internalID: 4313975030339572077
+      spriteID: 0baffc399bab29840800000000000000
+      internalID: 5229447423542164144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 784
+        height: 155
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636d233d10d710d50800000000000000
+      internalID: 6701775167295772214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_tentaculos_ataque_2_v02_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 871
+        height: 139
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cb9748fb97c90b0800000000000000
+      internalID: -5720563563199087543
       vertices: []
       indices: 
       edges: []
@@ -269,7 +341,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8dfab830b4830fc4d9918bfb2605ac0d
+    spriteID: f79fc6608e360004abfbed6709a7264d
     internalID: 0
     vertices: []
     indices: 
