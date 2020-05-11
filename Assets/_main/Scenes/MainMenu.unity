@@ -6750,10 +6750,11 @@ MonoBehaviour:
   knifeTarget: {fileID: 1943590912}
   knifeAnim: {fileID: 731893461}
   lifePanel: {fileID: 0}
-  hpPfb: {fileID: 0}
-  fullHeart: {fileID: 0}
-  halffHeart: {fileID: 0}
-  hollowHeart: {fileID: 0}
+  hpPfb: {fileID: 3577259371267793369, guid: 9c56fc428b3f61e4a9ae3555affb17c3, type: 3}
+  fullHeart: {fileID: 356503425159369963, guid: f836862c28c386a4ebcd2c16c7f5ee64,
+    type: 3}
+  hollowHeart: {fileID: -8807628642698765489, guid: f836862c28c386a4ebcd2c16c7f5ee64,
+    type: 3}
   charHP: {fileID: 0}
 --- !u!114 &483443064
 MonoBehaviour:

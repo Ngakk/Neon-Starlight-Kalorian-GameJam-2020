@@ -34,7 +34,6 @@ namespace Managers
         public GameObject lifePanel;
         public GameObject hpPfb;
         public Sprite fullHeart;
-        public Sprite halffHeart;
         public Sprite hollowHeart;
         public Health charHP;
 
