@@ -344,6 +344,71 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &479406636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479406637}
+  - component: {fileID: 479406638}
+  - component: {fileID: 479406639}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479406637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479406636}
+  m_LocalRotation: {x: -0.30070576, y: 0, z: 0, w: 0.953717}
+  m_LocalPosition: {x: 0, y: -0.87, z: -0.876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2015903791}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -35, y: 0, z: 0}
+--- !u!65 &479406638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479406636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.565934, y: 1, z: 0.94929683}
+  m_Center: {x: 0.005490303, y: -0.0000000010073855, z: 0.025351685}
+--- !u!114 &479406639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479406636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1a5bfc5c34f52438815c48726be8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitData:
+    damage: 10
+    knockback: 10
+    knockbackTime: 1
+    sourcePosition: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+    direction: {x: 0, y: 0, z: 1}
+  isAlly: 0
 --- !u!1 &589722624
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +877,37 @@ Transform:
   m_Father: {fileID: 1942513750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2015903788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6799326189395011671, guid: 2c4a0d3d30bec604992bc0af0c0ca3d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6799326190869817467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2015903790 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6799326189395011669, guid: 2c4a0d3d30bec604992bc0af0c0ca3d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6799326190869817467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2015903791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6799326189395011668, guid: 2c4a0d3d30bec604992bc0af0c0ca3d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6799326190869817467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2015903792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015903788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f658b5638ae824b84abe47d0d0452f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2015903790}
 --- !u!1 &2089527853
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,8 +917,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2089527856}
-  - component: {fileID: 2089527855}
   - component: {fileID: 2089527854}
+  - component: {fileID: 2089527858}
+  - component: {fileID: 2089527855}
+  - component: {fileID: 2089527857}
   m_Layer: 0
   m_Name: SideTentacles
   m_TagString: Untagged
@@ -875,6 +973,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089527857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089527853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e383bb8292bbfd4ab0053cc504bcfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2089527858}
+        m_MethodName: Attack
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 6
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  keyCodeToPlay: 0
+--- !u!114 &2089527858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089527853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8b78f8f4655504aa28c50b57c8cfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 636919113}
+  anim: {fileID: 2089527854}
+  velocity: 5
 --- !u!114 &2144773728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +1050,8 @@ MonoBehaviour:
   enemyActions: {fileID: 6252311990773741421}
   animator: {fileID: 6252311990773741422}
   idle: {fileID: 11400000, guid: bebae3c1c48b6114f992a5940d61a426, type: 2}
-  attack: {fileID: 11400000, guid: 20194a000f12dce4b963542ee1bce8fa, type: 2}
-  hurt: {fileID: 11400000, guid: e940e0342a50ba5438b6216b1147c39c, type: 2}
+  attack: {fileID: 11400000, guid: 52d74bcbb17731c42935fe2f4c07d99c, type: 2}
+  hurt: {fileID: 11400000, guid: 33601bdeeab46154c9fc49fb630c3975, type: 2}
   die: {fileID: 11400000, guid: 5faa53222bd7a754194d38823268becd, type: 2}
   onAttackUEvent:
     m_PersistentCalls:
@@ -930,26 +1070,15 @@ MonoBehaviour:
   onHurtUEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Activate
-        m_Mode: 1
+      - m_Target: {fileID: 2015903792}
+        m_MethodName: Attack
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Spit
+          m_FloatArgument: 1
+          m_StringArgument: Attack
           m_BoolArgument: 0
         m_CallState: 2
   onDieUEvent:
@@ -1284,6 +1413,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 636919114, guid: ccd3c9546cb7acf4b942da47412485e3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8519935299174483368, guid: ccd3c9546cb7acf4b942da47412485e3,
         type: 3}
       propertyPath: m_LocalPosition.x
