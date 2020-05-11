@@ -30,6 +30,14 @@ namespace Managers
         public GameObject knifeTarget;
         public Animator knifeAnim;
 
+        [Header("Hud")]
+        public GameObject lifePanel;
+        public GameObject hpPfb;
+        public Sprite fullHeart;
+        public Sprite halffHeart;
+        public Sprite hollowHeart;
+        public Health charHP;
+
         private void Awake()
         {
             ManagerStatic.uiManager = this;
@@ -169,6 +177,26 @@ namespace Managers
             Vector3 pos = _go.transform.position;
             knifeTarget.transform.position = pos;
             knifeAnim.SetTrigger("ThrowKnife");
+        }
+
+        public void UpateCharHP()
+        {
+            foreach(Transform t in lifePanel.transform)
+            {
+                Destroy(t.gameObject);
+            }
+
+            for (int i = 0; i < charHP.maxHealth; i++)
+            {
+                GameObject heart = Instantiate(hpPfb, lifePanel.transform);
+                if (charHP.currentHealth > i)
+                {
+                    heart.GetComponent<Image>().sprite = fullHeart;
+                } else
+                {
+                    heart.GetComponent<Image>().sprite = hollowHeart;
+                }
+            }
         }
 
         IEnumerator addDelayed(GameObject _panel)
