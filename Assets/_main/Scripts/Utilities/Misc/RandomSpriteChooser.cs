@@ -9,7 +9,6 @@ public class RandomSpriteChooser : MonoBehaviour
 
     public void Choose()
     {
-        Debug.Log("Choosing random sprite");
         renderer.sprite = options[Random.Range(0, options.Length)];
     }
 }

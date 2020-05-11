@@ -8,6 +8,7 @@ public class SquidAttack : EnemyState
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
         _behaviour.onHurt += OnHurt;
+        _behaviour.animator.SetTrigger("Attack");
     }
 
     public override void OnStateExit(EnemyBehaviour _behaviour)
@@ -22,6 +23,6 @@ public class SquidAttack : EnemyState
 
     void OnHurt(HitData _hitData, EnemyBehaviour _behaviour)
     {
-
+        _behaviour.ChangeState(_behaviour.hurt);
     }
 }
