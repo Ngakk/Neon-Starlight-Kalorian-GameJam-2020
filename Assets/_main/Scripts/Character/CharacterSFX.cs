@@ -24,6 +24,7 @@ public class CharacterSFX : MonoBehaviour
     {
         audio = ManagerStatic.audioManager;
         InvokeRepeating("BreathSound", 1, 4);
+        audio.PlaySoundGlobalLoop(DeezNuts.FIGHT_MUSIC, 0, Mixer.MUSIC);
     }
 
     public void StepSound()

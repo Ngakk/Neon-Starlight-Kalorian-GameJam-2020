@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_main/Scenes/MonsterScenarios/Battleground UI Fix.unity
     guid: 80bc051635ab7dc409ddd76c1f7db80e
+  - enabled: 1
+    path: Assets/_main/Scenes/MonsterScenarios/BattlegroundSquid.unity
+    guid: b7f3a9f9ab1d8c54583a763c54416800
   m_configObjects: {}

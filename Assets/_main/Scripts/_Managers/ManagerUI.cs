@@ -200,15 +200,17 @@ namespace Managers
 
         public void UpateCharHP()
         {
+            int nOfHearts = Mathf.CeilToInt(charHP.maxHealth / 10f);
             foreach(Transform t in lifePanel.transform)
             {
                 Destroy(t.gameObject);
             }
 
-            for (int i = 0; i < charHP.maxHealth; i++)
+            int currHearts = Mathf.CeilToInt(charHP.currentHealth / 10f);
+            for (int i = 0; i < nOfHearts; i++)
             {
                 GameObject heart = Instantiate(hpPfb, lifePanel.transform);
-                if (charHP.currentHealth > i)
+                if (currHearts > i)
                 {
                     heart.GetComponent<Image>().sprite = fullHeart;
                 } else
