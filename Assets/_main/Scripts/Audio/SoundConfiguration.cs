@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class SoundConfiguration : MonoBehaviour
 {
+    public Slider masterSlider;
+    public Slider musicSlider;
+    public Slider sfxSlider;
+
     public AudioMixer masterVolume;
 
     void Start()
@@ -13,18 +17,18 @@ public class SoundConfiguration : MonoBehaviour
         
     }
 
-    public void SetMasterVolume(float _val)
+    public void SetMasterVolume()
     {
-        masterVolume.SetFloat("masterVolume", _val);
+        masterVolume.SetFloat("masterVolume", masterSlider.value);
     }
 
-    public void SetMusicVolume(float _val)
+    public void SetMusicVolume()
     {
-        masterVolume.SetFloat("musicVolume", _val);
+        masterVolume.SetFloat("musicVolume", musicSlider.value);
     }
 
-    public void SetSFXVolume(float _val)
+    public void SetSFXVolume()
     {
-        masterVolume.SetFloat("sfxVolume", _val);
+        masterVolume.SetFloat("sfxVolume", sfxSlider.value);
     }
 }

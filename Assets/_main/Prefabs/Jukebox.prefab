@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5648573535554482510}
   - component: {fileID: 5648573535554482511}
   - component: {fileID: 5648573535554482508}
-  - component: {fileID: 6427225440459872485}
   m_Layer: 0
   m_Name: Jukebox
   m_TagString: Untagged
@@ -142,17 +141,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6427225440459872485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5648573535554482509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 687a7507977d8a244b4e777ddd5f8547, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isUnique: 0
-  uniqueName: 
