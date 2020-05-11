@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Managers;
 
 public class MapLocationsBtn : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MapLocationsBtn : MonoBehaviour
 
     private void LoadSceneDelayed()
     {
-        SceneManager.LoadScene(sceneIndex);
+        ManagerStatic.uiManager.ToggleMainMenu(false);
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Additive);
     }
 }

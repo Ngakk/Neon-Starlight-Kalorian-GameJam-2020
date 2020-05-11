@@ -8,6 +8,7 @@ public class CallManagers : MonoBehaviour
 {
     public void GoBackToMenu(int _index)
     {
-        SceneManager.LoadScene(_index);
+        SceneManager.UnloadSceneAsync(_index);
+        ManagerStatic.uiManager.ToggleMainMenu(true);
     }
 }

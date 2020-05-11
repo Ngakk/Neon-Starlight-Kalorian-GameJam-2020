@@ -9,6 +9,7 @@ namespace Managers
     public class ManagerUI : MonoBehaviour
     {
         [Header("Navigation")]
+        public GameObject MainPanel;
         public GameObject BGPanel;
         public GameObject FGPanel;
         public GameObject SettingsPanel;
@@ -36,6 +37,25 @@ namespace Managers
         public Sprite fullHeart;
         public Sprite hollowHeart;
         public Health charHP;
+        public GameObject loadingScreen;
+
+        [Header("Hack")]
+        public GameObject[] mainMenuObjs;
+
+        public void ToggleMainMenu(bool _bool)
+        {
+            for (int i = 0; i < mainMenuObjs.Length; i++)
+            {
+                mainMenuObjs[i].SetActive(_bool);
+            }
+
+            if (_bool)
+            {
+                loadingScreen.SetActive(false);
+                ChangeMenuPanel(MainPanel);
+                RemoveMenuPanel(knifeTarget);
+            }
+        }
 
         private void Awake()
         {
