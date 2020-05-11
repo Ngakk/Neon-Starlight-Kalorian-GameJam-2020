@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     {
         hurtbox.onHurt += OnHurt;
     }
-
+    
     private void OnDisable()
     {
         hurtbox.onHurt -= OnHurt;
