@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Costilla Gourmet
   m_EditorClassIdentifier: 
   ingredientSpr: {fileID: 21300000, guid: 5762a7a86b160d140b7f07dcf806600c, type: 3}
-  ingredientName: Costilla Gourmet
+  ingredientName: Gourmet Ribs

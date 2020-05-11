@@ -58,5 +58,27 @@ namespace Managers
         {
             PlaySoundGlobal((DeezNuts)_group);
         }
+
+        public void PlaySoundGlobalLoop(DeezNuts _group, int sound)
+        {
+            StartCoroutine(LoopSong(audioList.clipGroups[(int)_group].clips[sound]));
+        }
+
+        public void StopGlobalSounds()
+        {
+            StopAllCoroutines();
+        }
+
+        private IEnumerator LoopSong(AudioClip audio)
+        {
+            while(true)
+            {
+                var ad = PoolManager.Spawn(audioPrefab.gameObject, Vector3.zero, Quaternion.identity).GetComponent<AudioDrop>();
+                ad.audioSource.clip = audio;
+                ad.audioSource.spatialize = false;
+                ad.Play();
+                yield return new WaitForSeconds(audio.length);
+            }
+        }
     }
 }

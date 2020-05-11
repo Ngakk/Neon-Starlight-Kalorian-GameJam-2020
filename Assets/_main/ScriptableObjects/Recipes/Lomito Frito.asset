@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lomito Frito
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Lomito Frito
+  recipeName: Fried Loin
   ingredients:
   - {fileID: 11400000, guid: 21af963089d63d24199060ce777b694d, type: 2}
   - {fileID: 11400000, guid: a5ede4f069b5a4e4eba4da4f6a4d9842, type: 2}

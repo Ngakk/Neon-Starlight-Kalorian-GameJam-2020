@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Huevo a la Cola
   m_EditorClassIdentifier: 
   recipeSpr: {fileID: 21300000, guid: 8871684047a04ef43b73417925f4d2de, type: 3}
-  recipeName: Huevo a la Cola
+  recipeName: Eggs a la Tail
   ingredients:
   - {fileID: 11400000, guid: bb09826af0259fd40be87deddcc606b0, type: 2}
   - {fileID: 11400000, guid: e0b7786222579d644a8431a0f3faf90c, type: 2}

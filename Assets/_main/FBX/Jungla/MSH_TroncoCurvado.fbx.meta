@@ -3,7 +3,12 @@ guid: 1475d973a86512f419d764a313331bb1
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_TroncoCurvo
+    second: {fileID: 2100000, guid: a8033f8db487040459feefb6476bbfe3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
