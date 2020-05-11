@@ -336,6 +336,8 @@ MonoBehaviour:
   randomNumber: 0
   drops: []
   pivotLoot: {fileID: 2482417670070344233}
+  dropsList: {fileID: 0}
+  dropPfb: {fileID: 0}
 --- !u!95 &9108709787752812035
 Animator:
   serializedVersion: 3
@@ -435,7 +437,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 9108709787752812032}
         m_MethodName: DropLoot
         m_Mode: 1
         m_Arguments:
