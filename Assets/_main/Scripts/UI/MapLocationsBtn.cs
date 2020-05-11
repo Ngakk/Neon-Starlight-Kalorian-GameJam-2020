@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MapLocationsBtn : MonoBehaviour
 {
-    public string scene;
+    public int sceneIndex;
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(scene);
+        Invoke("LoadSceneDelayed", 1.0f);
+    }
+
+    private void LoadSceneDelayed()
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 }

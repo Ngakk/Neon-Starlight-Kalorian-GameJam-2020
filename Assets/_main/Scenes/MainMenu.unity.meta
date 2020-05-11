@@ -1,5 +1,10 @@
 fileFormatVersion: 2
-guid: e69fc3e11be797e419a53aa82e34a290
+<<<<<<< HEAD:Assets/_main/Animations/UI.meta
+guid: 3705dca29a2b259469fcbce41a359f45
+folderAsset: yes
+=======
+guid: ce04a847f2052af4d81aed7082dd2e23
+>>>>>>> MergingZone:Assets/Experimental/UI3DLayers_test.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
