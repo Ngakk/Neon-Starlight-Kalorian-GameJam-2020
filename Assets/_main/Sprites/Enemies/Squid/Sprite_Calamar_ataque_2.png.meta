@@ -120,9 +120,9 @@ TextureImporter:
       name: Sprite_Calamar_ataque_2_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 6
         y: 624
-        width: 356
+        width: 354
         height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -142,9 +142,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 404
-        y: 630
+        y: 632
         width: 355
-        height: 362
+        height: 360
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Sprite_Calamar_ataque_2_3
       rect:
         serializedVersion: 2
-        x: 417
-        y: 217
+        x: 416
+        y: 219
         width: 354
-        height: 384
+        height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,9 +205,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 834
-        y: 225
+        y: 227
         width: 355
-        height: 384
+        height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: Sprite_Calamar_ataque_2_5
       rect:
         serializedVersion: 2
-        x: 1272
-        y: 242
-        width: 356
-        height: 384
+        x: 1273
+        y: 244
+        width: 354
+        height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
