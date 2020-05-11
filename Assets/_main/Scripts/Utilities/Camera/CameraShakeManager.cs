@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class CameraShakeManager : MonoBehaviour
 {
+    public Camera cam;
+
     void Start()
     {
         //CameraShake(1f);
@@ -12,6 +14,6 @@ public class CameraShakeManager : MonoBehaviour
 
     public void CameraShake()
     {
-        Camera.main.DOShakeRotation(1f, 5, 40, 90, true);
+        cam.DOShakeRotation(1f, 5, 40, 90, true);
     }
 }

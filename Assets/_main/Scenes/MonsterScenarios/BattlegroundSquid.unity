@@ -654,6 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0deb7a5bfc2202c4485bde7b6b7dc72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 963194227}
 --- !u!1 &415373535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0deb7a5bfc2202c4485bde7b6b7dc72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 963194227}
 --- !u!1001 &1129427417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1438,7 +1440,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 507885686872973420, guid: e1433e8763126d341a4694b29d1e578f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e1433e8763126d341a4694b29d1e578f, type: 3}
 --- !u!95 &1129427418 stripped
 Animator:
