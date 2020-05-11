@@ -202,13 +202,13 @@ namespace Managers
 
         public void UpateCharHP()
         {
-            int nOfHearts = Mathf.CeilToInt(charHP.maxHealth / 10f);
+            int nOfHearts = Mathf.FloorToInt(charHP.maxHealth / 10f);
             foreach(Transform t in lifePanel.transform)
             {
                 Destroy(t.gameObject);
             }
 
-            int currHearts = Mathf.CeilToInt(charHP.currentHealth / 10f);
+            int currHearts = Mathf.FloorToInt(charHP.currentHealth / 10f);
             for (int i = 0; i < nOfHearts; i++)
             {
                 GameObject heart = Instantiate(hpPfb, lifePanel.transform);
