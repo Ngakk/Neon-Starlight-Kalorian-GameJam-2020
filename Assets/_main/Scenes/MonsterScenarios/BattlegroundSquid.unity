@@ -1255,7 +1255,7 @@ MonoBehaviour:
   followY: 1
   followZ: 1
   lookAt: 1
-  lookAtOffset: {x: 0, y: 0, z: 5}
+  lookAtOffset: {x: 0, y: 2, z: 5}
   rotateWithTarget: 0
   rotationOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &975429095
