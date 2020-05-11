@@ -39,6 +39,6 @@ public class AcidDrop : MonoBehaviour
     private void OnDestroy()
     {
         if(debris)
-            Instantiate(debris, transform.position, Quaternion.identity);
+            Instantiate(debris, transform.position, Quaternion.identity, transform.parent);
     }
 }

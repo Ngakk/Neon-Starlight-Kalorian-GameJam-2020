@@ -20,7 +20,7 @@ public class AcidSpawner : MonoBehaviour
     {
         for (int i = 0; i < _ammount; i++)
         {
-            GameObject acid = Instantiate(acidIndicator, new Vector3(target.position.x, 0.01f, target.position.z), Quaternion.identity);
+            GameObject acid = Instantiate(acidIndicator, new Vector3(target.position.x, 0.01f, target.position.z), Quaternion.identity, gameObject.transform);
             StartCoroutine(spawnAcidDrop(acid.GetComponent<ParticleSystem>().main.duration, target.position));
             Destroy(acid, acid.GetComponent<ParticleSystem>().main.duration + 0.1f);
             yield return new WaitForSeconds(spawnRate);
@@ -30,7 +30,7 @@ public class AcidSpawner : MonoBehaviour
     public IEnumerator spawnAcidDrop(float _delay, Vector3 _pos)
     {
         yield return new WaitForSeconds(_delay);
-        GameObject drop = Instantiate(acidPfb, new Vector3(_pos.x + spawnOffset.x, _pos.y + spawnOffset.y, _pos.z + spawnOffset.z), acidPfb.transform.rotation);
+        GameObject drop = Instantiate(acidPfb, new Vector3(_pos.x + spawnOffset.x, _pos.y + spawnOffset.y, _pos.z + spawnOffset.z), acidPfb.transform.rotation, gameObject.transform);
         var comp = drop.GetComponent<Rigidbody>();
         if (comp)
             comp.velocity = startingSpeed;

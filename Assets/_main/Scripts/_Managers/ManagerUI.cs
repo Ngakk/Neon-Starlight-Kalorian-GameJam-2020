@@ -55,7 +55,7 @@ namespace Managers
                 ChangeMenuPanel(MainPanel);
                 RemoveMenuPanel(knifeTarget);
                 PoolManager.ClearPools();
-                ManagerStatic.audioManager.StopAllCoroutines();
+                ManagerStatic.audioManager.StopGlobalSounds();
             }
         }
 

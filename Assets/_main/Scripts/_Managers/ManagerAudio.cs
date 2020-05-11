@@ -18,6 +18,8 @@ namespace Managers
         public AudioDrop audioPrefab;
         public AudioMixerGroup[] mixers;
 
+        public List<AudioDrop> audios = new List<AudioDrop>();
+
         AudioClipListVariable audioList;
 
         private void Awake()
@@ -88,6 +90,10 @@ namespace Managers
 
         public void StopGlobalSounds()
         {
+            for (int i = 0; i < audios.Count; i++)
+            {
+                audios[i].SelfDespawn();
+            }
             StopAllCoroutines();
         }
 
@@ -96,6 +102,7 @@ namespace Managers
             while(true)
             {
                 var ad = PoolManager.Spawn(audioPrefab.gameObject, Vector3.zero, Quaternion.identity).GetComponent<AudioDrop>();
+                audios.Add(ad);
                 ad.audioSource.outputAudioMixerGroup = mixers[(int)_soundType];
                 ad.audioSource.clip = audio;
                 ad.audioSource.spatialize = false;

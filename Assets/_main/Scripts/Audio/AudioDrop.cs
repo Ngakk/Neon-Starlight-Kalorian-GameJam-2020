@@ -18,7 +18,7 @@ public class AudioDrop : MonoBehaviour
         audioSource.Play();
     }
 
-    void SelfDespawn()
+    public void SelfDespawn()
     {
         PoolManager.Despawn(gameObject);
     }

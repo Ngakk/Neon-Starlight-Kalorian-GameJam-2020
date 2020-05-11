@@ -78,4 +78,9 @@ public class ClamidiaCharco : MonoBehaviour
         hitboxHolder.SetActive(false);
         activated = false;
     }
+
+    private void OnDisable()
+    {
+        DOTween.Clear();
+    }
 }
