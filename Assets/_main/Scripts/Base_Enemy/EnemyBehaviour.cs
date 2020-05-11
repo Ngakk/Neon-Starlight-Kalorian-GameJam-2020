@@ -23,12 +23,12 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        hurtbox.onHurt += OnHurt;
+        hurtbox.onHurtLate += OnHurt;
     }
 
     private void OnDisable()
     {
-        hurtbox.onHurt -= OnHurt;
+        hurtbox.onHurtLate -= OnHurt;
     }
 
     private void Start()

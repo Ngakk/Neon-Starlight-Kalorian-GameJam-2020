@@ -15,7 +15,7 @@ public class Hurtbox : MonoBehaviour
     private Collider[] colliders;
     private float lastHitTime;
 
-    public HurtboxEvent onHurt;
+    public HurtboxEvent onHurt, onHurtLate;
 
     private void Start()
     {
@@ -39,10 +39,12 @@ public class Hurtbox : MonoBehaviour
 
     public void OnHit(HitData _hitData)
     {
+        Debug.Log("Hurtbox on hit");
         if (Time.time > lastHitTime + invulnerableTime)
         {
             lastHitTime = Time.time;
             onHurt?.Invoke(_hitData);
+            onHurtLate?.Invoke(_hitData);
         }
     }
 }

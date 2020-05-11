@@ -29,6 +29,7 @@ public class Health : MonoBehaviour
 
     void OnHurt(HitData _hitData)
     {
+        Debug.Log("Health on hurt");
         currentHealth -= _hitData.damage;
 
         if (currentHealth <= 0)

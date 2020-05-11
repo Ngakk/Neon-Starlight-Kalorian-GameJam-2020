@@ -11,7 +11,7 @@ public class SquidHurt : EnemyState
 
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
-        Debug.Log("Hurt enter state");
+        Debug.Log("Hurt enter state with health " + _behaviour.ownHealth.currentHealth);
         if(_behaviour.ownHealth.currentHealth <= 0)
         {
             _behaviour.ChangeState(_behaviour.die);
