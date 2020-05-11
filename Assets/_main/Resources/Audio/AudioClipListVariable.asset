@@ -57,4 +57,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d9b8fd999a510f44a9dbc3cd597120a4, type: 3}
     - {fileID: 8300000, guid: 374c78d352309b54b99dc488a9f40d02, type: 3}
   - name: SquidBait_SFX
-    clips: []
+    clips:
+    - {fileID: 8300000, guid: e1985c1aabb63e843a6a6a5c9e441dc1, type: 3}
+    - {fileID: 8300000, guid: 556ba0129548a80439798f6f57fcf303, type: 3}
+    - {fileID: 8300000, guid: d5227f8367455774d8732ef682b4edf0, type: 3}
