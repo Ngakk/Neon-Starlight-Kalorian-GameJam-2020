@@ -12,6 +12,6 @@ public class SpitSFX : MonoBehaviour
 
     public void SplashSound()
     {
-        ManagerStatic.audioManager.PlaySound(DeezNuts.CLAMIDIA_SFX, 0, transform.position);
+        ManagerStatic.audioManager.PlaySound(DeezNuts.CLAMIDIA_SFX, 0, transform.position, Mixer.SFX);
     }
 }
