@@ -9,6 +9,7 @@ public class AudioDrop : MonoBehaviour
     
     void OnSpawn()
     {
+
     }
 
     public void Play()

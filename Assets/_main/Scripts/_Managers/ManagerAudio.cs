@@ -28,6 +28,7 @@ namespace Managers
         private void OnLevelWasLoaded(int level)
         {
             Debug.Log("OnLevel was loaded");
+            StopGlobalSounds();
             PoolManager.ClearPools();
             PoolManager.MakePool(audioPrefab.gameObject, 50, 20, true);
         }
@@ -35,6 +36,7 @@ namespace Managers
         private void Start()
         {
             audioList = Resources.Load<AudioClipListVariable>(AudioClipListVariable.resourcePath);
+            StopGlobalSounds();
             PoolManager.MakePool(audioPrefab.gameObject, 50, 20, true);
         }
 

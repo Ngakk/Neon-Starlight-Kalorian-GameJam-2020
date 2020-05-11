@@ -661,6 +661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b27e87cde6d744f999e9817046aedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterSlider: {fileID: 471003420}
+  musicSlider: {fileID: 2098141575}
+  sfxSlider: {fileID: 1095748897}
   masterVolume: {fileID: 24100000, guid: 91da1b0cb4d43524f8dfea9b9969ee5c, type: 2}
 --- !u!1 &52319768
 GameObject:
@@ -6445,7 +6448,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 44961301}
         m_MethodName: SetMasterVolume
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12985,7 +12988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -235.79996, y: 309}
+  m_AnchoredPosition: {x: -235.79999, y: 309}
   m_SizeDelta: {x: -519.7885, y: -648.68243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990694708
@@ -13625,7 +13628,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 44961301}
         m_MethodName: SetSFXVolume
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18769,7 +18772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -272.15994, y: 18.497925}
+  m_AnchoredPosition: {x: -272.15997, y: 18.497925}
   m_SizeDelta: {x: -592.51776, y: -232.62106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1514193620
@@ -24505,7 +24508,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 44961301}
         m_MethodName: SetMusicVolume
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
