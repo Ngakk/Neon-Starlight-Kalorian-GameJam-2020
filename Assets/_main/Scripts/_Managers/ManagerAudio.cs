@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Managers;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public enum Mixer
 {

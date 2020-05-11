@@ -270,7 +270,7 @@ MonoBehaviour:
   hurtbox: {fileID: 636919116}
   onDied: {fileID: 11400000, guid: cb1f64a00d19b134b941e6302a8560ce, type: 2}
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
 --- !u!114 &636919116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0a15e97cd7f6443be1d81dfe6d63a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jukebox: {fileID: 5648573535554482511, guid: 8aed862d807794f4985477a50cc11357, type: 3}
   hurtbox: {fileID: 636919116}
 --- !u!1 &8519935299931776486
 GameObject:

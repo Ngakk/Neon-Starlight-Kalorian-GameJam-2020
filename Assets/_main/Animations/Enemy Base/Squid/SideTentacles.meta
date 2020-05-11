@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/_main/Shaders.meta
-guid: 0679fcfe3111f8043a1542e6538dd597
-=======
-guid: d7fc6460c2b8f33459d2b881f5d7ed28
->>>>>>> ea4498e1ac7509e0bf859bf419c7b610ec147664:Assets/_main/Animations/Enemy Base/Squid/SideTentacles.meta
+guid: 53b4ecdd92aba2a41962c95ad20e0a97
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
