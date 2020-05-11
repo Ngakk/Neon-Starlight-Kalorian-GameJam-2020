@@ -42,7 +42,6 @@ public class Hurtbox : MonoBehaviour
         if (Time.time > lastHitTime + invulnerableTime)
         {
             lastHitTime = Time.time;
-            Debug.Log("Hurtbox onHit", gameObject);
             onHurt?.Invoke(_hitData);
         }
     }

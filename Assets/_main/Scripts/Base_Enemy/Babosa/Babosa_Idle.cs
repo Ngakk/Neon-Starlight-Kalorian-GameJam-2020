@@ -8,7 +8,6 @@ public class Babosa_Idle : EnemyState
     public override void OnStateEnter(EnemyBehaviour _behaviour)
     {
         timeStamp = Time.time;
-        Debug.Log("Idle state enter");
         _behaviour.onHurt += OnHurt;
         float difficulty = Mathf.InverseLerp(_behaviour.ownHealth.maxHealth, 20, _behaviour.ownHealth.currentHealth);
         randCooldown = Random.Range((1.2f - difficulty) * 3f, (1.2f - difficulty) * 5f);
