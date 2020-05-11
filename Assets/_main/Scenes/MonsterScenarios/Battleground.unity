@@ -1591,6 +1591,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8519935299792263394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &636919114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 636919116, guid: ccd3c9546cb7acf4b942da47412485e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8519935299792263394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636919113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47062ee0d75e7894dacb796e594a7e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &636919124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8519935299174483368, guid: ccd3c9546cb7acf4b942da47412485e3,
@@ -4071,6 +4083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpPanel: {fileID: 1231656575}
   charHP: {fileID: 8519935299792263395}
+  hurtBox: {fileID: 636919114}
 --- !u!1 &1232160312
 GameObject:
   m_ObjectHideFlags: 0
@@ -7173,6 +7186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sound Manager Tester (Borrar al build)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032929651231542557, guid: 1bbc8d8ba05df964087f7a5075e58cf0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bbc8d8ba05df964087f7a5075e58cf0, type: 3}
