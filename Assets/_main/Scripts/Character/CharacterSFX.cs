@@ -6,10 +6,12 @@ using Managers;
 public class CharacterSFX : MonoBehaviour
 {
     new private ManagerAudio audio;
+    public AudioDrop jukebox;
     public Hurtbox hurtbox;
 
     private void OnEnable()
     {
+        PoolManager.MakePool(jukebox.gameObject, 50, 20, true);
         hurtbox.onHurt += OnHurt;
     }
 
