@@ -16,6 +16,8 @@ MonoBehaviour:
   - name: UI_Click
     clips:
     - {fileID: 8300000, guid: 8074d85ade6f84b4ca3f56fa08138e23, type: 3}
+    - {fileID: 8300000, guid: 4ab0f073c13a1e74cac35afdbe14d698, type: 3}
+    - {fileID: 8300000, guid: 42d5abb59b2d8594c832b914ce44745e, type: 3}
   - name: BackgroundMusic
     clips:
     - {fileID: 8300000, guid: 7013c01d6a625da46925fdf610618658, type: 3}
@@ -54,3 +56,5 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 9e2a45290379e644cb4d94d68e78af42, type: 3}
     - {fileID: 8300000, guid: d9b8fd999a510f44a9dbc3cd597120a4, type: 3}
     - {fileID: 8300000, guid: 374c78d352309b54b99dc488a9f40d02, type: 3}
+  - name: SquidBait_SFX
+    clips: []

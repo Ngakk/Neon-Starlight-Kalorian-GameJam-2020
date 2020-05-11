@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Managers
 {
@@ -28,6 +29,13 @@ namespace Managers
         [Header("Map")]
         public GameObject knifeTarget;
         public Animator knifeAnim;
+
+        [Header("Hud")]
+        public GameObject lifePanel;
+        public GameObject hpPfb;
+        public Sprite fullHeart;
+        public Sprite hollowHeart;
+        public Health charHP;
 
         private void Awake()
         {
@@ -127,6 +135,11 @@ namespace Managers
             _panel.SetActive(true);
         }
 
+        public void AddMenuPanelDelayed(GameObject _panel)
+        {
+            StartCoroutine(addDelayed(_panel));
+        }
+
         public void AddMenuPanel(GameObject _panel)
         {
             _panel.SetActive(true);
@@ -135,6 +148,11 @@ namespace Managers
         public void RemoveMenuPanel(GameObject _panel)
         {
             _panel.SetActive(false);
+        }
+
+        public void ToggleMenuPanel(GameObject _panel)
+        {
+            _panel.SetActive(!_panel.activeSelf);
         }
 
         public void ChangeSubmenuPanel(GameObject _panel)
@@ -158,6 +176,32 @@ namespace Managers
             Vector3 pos = _go.transform.position;
             knifeTarget.transform.position = pos;
             knifeAnim.SetTrigger("ThrowKnife");
+        }
+
+        public void UpateCharHP()
+        {
+            foreach(Transform t in lifePanel.transform)
+            {
+                Destroy(t.gameObject);
+            }
+
+            for (int i = 0; i < charHP.maxHealth; i++)
+            {
+                GameObject heart = Instantiate(hpPfb, lifePanel.transform);
+                if (charHP.currentHealth > i)
+                {
+                    heart.GetComponent<Image>().sprite = fullHeart;
+                } else
+                {
+                    heart.GetComponent<Image>().sprite = hollowHeart;
+                }
+            }
+        }
+
+        IEnumerator addDelayed(GameObject _panel)
+        {
+            yield return new WaitForSeconds(0.5f);
+            AddMenuPanel(_panel);
         }
     }
 }

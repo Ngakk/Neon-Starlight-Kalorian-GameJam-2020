@@ -26,7 +26,7 @@ namespace Managers {
             recipesLearned.Clear();
         }
 
-        public void AddIngredient(InventoryItem_SO _invItem)
+        public void AddIngredient(InventoryItem_SO _invItem, int _qty)
         {
             bool itemExists = false;
             for (int i = 0; i < ingredients.Count; i++)
@@ -37,12 +37,12 @@ namespace Managers {
 
             if (itemExists)
             {
-                ingredients[0].AddQuantity(1);
+                ingredients[0].AddQuantity(_qty);
             } else
             {
                 InventoryItem newItem = new InventoryItem();
                 newItem.stats = _invItem;
-                newItem.qty = 1;
+                newItem.qty = _qty;
                 ingredients.Add(newItem);
             }
         }
