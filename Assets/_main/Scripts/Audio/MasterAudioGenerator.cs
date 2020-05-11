@@ -20,11 +20,13 @@ public class MasterAudioGenerator : MonoBehaviour
 
     public void FightMusic()
     {
+        audio.StopGlobalSounds();
         audio.PlaySoundGlobalLoop(DeezNuts.FIGHT_MUSIC, 0, Mixer.MUSIC);
     }
 
     public void MenuMusic()
     {
+        audio.StopGlobalSounds();
         audio.PlaySoundGlobalLoop(DeezNuts.BACKGROUNDMUSIC, 0, Mixer.MUSIC);
     }
 
