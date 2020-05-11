@@ -120,9 +120,9 @@ TextureImporter:
       name: Sprite_Calamar_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 6
         y: 662
-        width: 356
+        width: 354
         height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -141,9 +141,9 @@ TextureImporter:
       name: Sprite_Calamar_1
       rect:
         serializedVersion: 2
-        x: 412
+        x: 414
         y: 667
-        width: 357
+        width: 354
         height: 382
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       name: Sprite_Calamar_2
       rect:
         serializedVersion: 2
-        x: 841
+        x: 844
         y: 667
-        width: 358
+        width: 354
         height: 371
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -183,9 +183,9 @@ TextureImporter:
       name: Sprite_Calamar_3
       rect:
         serializedVersion: 2
-        x: 1272
+        x: 1276
         y: 662
-        width: 359
+        width: 354
         height: 378
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       name: Sprite_Calamar_4
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 234
         width: 354
         height: 382
@@ -225,9 +225,9 @@ TextureImporter:
       name: Sprite_Calamar_5
       rect:
         serializedVersion: 2
-        x: 443
+        x: 444
         y: 241
-        width: 355
+        width: 354
         height: 387
       alignment: 7
       pivot: {x: 0.5, y: 0}

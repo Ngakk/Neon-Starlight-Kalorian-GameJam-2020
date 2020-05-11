@@ -25,6 +25,5 @@ public class CustomEvent : ScriptableObject
     public void Unsubscribe(EventListener _el)
     {
         listeners.Remove(_el);
-        Debug.Log(_el.gameObject.name + " unsubscribed", _el.gameObject);
     }
 }

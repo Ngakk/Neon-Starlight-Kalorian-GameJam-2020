@@ -1,34 +1,61 @@
 fileFormatVersion: 2
-guid: 9d089e86d7e3fa54499bf4be8b4a999b
+guid: f81b67bb4527cf04d8a00115e6ae1a8f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7151651463637101936
-    second: "Sprite_Calamar_da\xF1o_0"
+      213: -8814188465996734793
+    second: Sprite_Calamar_death_0
   - first:
-      213: -7626364210788090667
-    second: "Sprite_Calamar_da\xF1o_1"
+      213: -5544054210459822137
+    second: Sprite_Calamar_death_1
   - first:
-      213: 5889303504340127393
-    second: "Sprite_Calamar_da\xF1o_2"
+      213: 4927399252827051235
+    second: Sprite_Calamar_death_2
   - first:
-      213: 4436682080305981518
-    second: "Sprite_Calamar_da\xF1o_3"
+      213: 3300525390522477015
+    second: Sprite_Calamar_death_3
   - first:
-      213: -4704621621797939674
-    second: "Sprite_Calamar_da\xF1o_4"
+      213: 959719889812856787
+    second: Sprite_Calamar_death_4
   - first:
-      213: -4585867955958468450
-    second: "Sprite_Calamar_da\xF1o_5"
+      213: -9209420826075095686
+    second: Sprite_Calamar_death_5
   - first:
-      213: 4548388616257035638
-    second: "Sprite_Calamar_da\xF1o_6"
+      213: 1904450220078860471
+    second: Sprite_Calamar_death_6
   - first:
-      213: 356326153051258978
-    second: "Sprite_Calamar_da\xF1o_7"
+      213: 3339508480810454957
+    second: Sprite_Calamar_death_7
   - first:
-      213: -2427599337524260166
-    second: "Sprite_Calamar_da\xF1o_8"
+      213: 4905752045083334283
+    second: Sprite_Calamar_death_8
+  - first:
+      213: 308132282738383160
+    second: Sprite_Calamar_death_0
+  - first:
+      213: -6257960968843286272
+    second: Sprite_Calamar_death_1
+  - first:
+      213: 8780556667049963086
+    second: Sprite_Calamar_death_2
+  - first:
+      213: -8151913218654319299
+    second: Sprite_Calamar_death_3
+  - first:
+      213: -7314290662372084373
+    second: Sprite_Calamar_death_4
+  - first:
+      213: 5426569790450232074
+    second: Sprite_Calamar_death_5
+  - first:
+      213: -4736456843362847196
+    second: Sprite_Calamar_death_6
+  - first:
+      213: 6486493571323191786
+    second: Sprite_Calamar_death_7
+  - first:
+      213: 7679973467237218160
+    second: Sprite_Calamar_death_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,190 +153,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_0"
+      name: Sprite_Calamar_death_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1020
-        width: 354
-        height: 386
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 092128882ea30cc90800000000000000
-      internalID: -7151651463637101936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_1"
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 1021
-        width: 348
-        height: 379
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dc39301826b92690800000000000000
-      internalID: -7626364210788090667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_2"
-      rect:
-        serializedVersion: 2
-        x: 877
-        y: 1034
-        width: 359
-        height: 372
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ae08a695520bb150800000000000000
-      internalID: 5889303504340127393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_3"
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 611
+        x: 5
+        y: 995
         width: 360
-        height: 372
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 401
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48aaf178d2429d30800000000000000
-      internalID: 4436682080305981518
+      spriteID: 8399378bda4b64400800000000000000
+      internalID: 308132282738383160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_4"
+      name: Sprite_Calamar_death_1
       rect:
         serializedVersion: 2
-        x: 490
-        y: 617
-        width: 356
-        height: 381
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 393
+        y: 1020
+        width: 415
+        height: 358
+      alignment: 9
+      pivot: {x: 0.5, y: 0.055}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6269c16af83d5beb0800000000000000
-      internalID: -4704621621797939674
+      spriteID: 00926d9a7a14729a0800000000000000
+      internalID: -6257960968843286272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_5"
+      name: Sprite_Calamar_death_2
       rect:
         serializedVersion: 2
-        x: 907
-        y: 612
-        width: 359
-        height: 371
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 845
+        y: 985
+        width: 402
+        height: 399
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90bf3a1469bb50c0800000000000000
-      internalID: -4585867955958468450
+      spriteID: e4e63bd64cdcad970800000000000000
+      internalID: 8780556667049963086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_6"
+      name: Sprite_Calamar_death_3
       rect:
         serializedVersion: 2
-        x: 21
-        y: 54
-        width: 348
-        height: 379
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1295
+        y: 975
+        width: 428
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5, y: 0.165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d5e6c195f1f1f30800000000000000
-      internalID: 4548388616257035638
+      spriteID: d3d4c4a4e169ede80800000000000000
+      internalID: -8151913218654319299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_7"
+      name: Sprite_Calamar_death_4
       rect:
         serializedVersion: 2
-        x: 497
-        y: 62
-        width: 354
-        height: 386
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 59
+        y: 531
+        width: 427
+        height: 395
+      alignment: 9
+      pivot: {x: 0.5, y: 0.165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2604dc09fbce1f400800000000000000
-      internalID: 356326153051258978
+      spriteID: b65fa55356b6e7a90800000000000000
+      internalID: -7314290662372084373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "Sprite_Calamar_da\xF1o_8"
+      name: Sprite_Calamar_death_5
       rect:
         serializedVersion: 2
-        x: 929
-        y: 54
-        width: 354
-        height: 386
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 576
+        y: 531
+        width: 427
+        height: 395
+      alignment: 9
+      pivot: {x: 0.5, y: 0.165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab294e5b34f6f4ed0800000000000000
-      internalID: -2427599337524260166
+      spriteID: a0be6a4297c0f4b40800000000000000
+      internalID: 5426569790450232074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_death_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 531
+        width: 427
+        height: 395
+      alignment: 9
+      pivot: {x: 0.5, y: 0.165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426b3658899b44eb0800000000000000
+      internalID: -4736456843362847196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Calamar_death_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 39
+        width: 427
+        height: 395
+      alignment: 9
+      pivot: {x: 0.5, y: 0.165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1e2944987a40a50800000000000000
+      internalID: 6486493571323191786
       vertices: []
       indices: 
       edges: []
@@ -317,7 +323,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e01e5306e2dd125408b40499270767f0
+    spriteID: 2c295c1773b9dfd4eb382ee996f787db
     internalID: 0
     vertices: []
     indices: 
