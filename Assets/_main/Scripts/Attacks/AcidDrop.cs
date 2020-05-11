@@ -41,4 +41,10 @@ public class AcidDrop : MonoBehaviour
         if(debris)
             Instantiate(debris, transform.position, Quaternion.identity, transform.parent);
     }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        debris = null;
+        Destroy(gameObject);
+    }
 }

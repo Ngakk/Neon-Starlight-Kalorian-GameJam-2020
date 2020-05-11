@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtbox: {fileID: 2064210732}
   onDied: {fileID: 11400000, guid: c8fa03a8c7bc1f340a81bef2f26093db, type: 2}
-  maxHealth: 150
+  maxHealth: 75
   currentHealth: 0
 --- !u!114 &2064210732
 MonoBehaviour:
