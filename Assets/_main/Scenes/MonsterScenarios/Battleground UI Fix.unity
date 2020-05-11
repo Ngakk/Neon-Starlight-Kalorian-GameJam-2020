@@ -1703,6 +1703,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8500480000145443668, guid: 8fc7b3baf15bc1749bee3b190a810708,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8500480000313497982, guid: 8fc7b3baf15bc1749bee3b190a810708,
         type: 3}
       propertyPath: charHP
@@ -1713,6 +1718,11 @@ PrefabInstance:
       propertyPath: hurtBox
       value: 
       objectReference: {fileID: 636919114}
+    - target: {fileID: 8500480000465622397, guid: 8fc7b3baf15bc1749bee3b190a810708,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8500480000631495720, guid: 8fc7b3baf15bc1749bee3b190a810708,
         type: 3}
       propertyPath: m_Name
