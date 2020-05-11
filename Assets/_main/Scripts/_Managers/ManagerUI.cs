@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Managers
 {
@@ -127,6 +128,11 @@ namespace Managers
             _panel.SetActive(true);
         }
 
+        public void AddMenuPanelDelayed(GameObject _panel)
+        {
+            StartCoroutine(addDelayed(_panel));
+        }
+
         public void AddMenuPanel(GameObject _panel)
         {
             _panel.SetActive(true);
@@ -163,6 +169,12 @@ namespace Managers
             Vector3 pos = _go.transform.position;
             knifeTarget.transform.position = pos;
             knifeAnim.SetTrigger("ThrowKnife");
+        }
+
+        IEnumerator addDelayed(GameObject _panel)
+        {
+            yield return new WaitForSeconds(0.5f);
+            AddMenuPanel(_panel);
         }
     }
 }

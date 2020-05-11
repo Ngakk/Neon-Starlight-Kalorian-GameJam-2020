@@ -9,7 +9,7 @@ public class MapLocationsBtn : MonoBehaviour
 
     public void LoadScene()
     {
-        Invoke("LoadSceneDelayed", 1.0f);
+        Invoke("LoadSceneDelayed", 4.0f);
     }
 
     private void LoadSceneDelayed()
